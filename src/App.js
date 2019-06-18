@@ -9,7 +9,7 @@ import { Router } from "components/Router";
 import "./app.css";
 
 function App() {
-  const { outerWidth: width, outerHeight: height, innerWidth, innerHeight } =
+  const { outerWidth, outerHeight, innerWidth: width, innerHeight: height } =
     typeof window !== "undefined"
       ? useWindowSize()
       : {
@@ -27,9 +27,6 @@ function App() {
         <title>{title}</title>
       </Head>
       <div>
-        <p>
-          {JSON.stringify({ width, height, innerHeight, innerWidth }, null, 2)}
-        </p>
         <Particles
           params={{
             interactivity: {
