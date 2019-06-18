@@ -1,6 +1,7 @@
 import React from "react";
 import { Root, Routes, Head, useSiteData } from "react-static";
 
+import useWindowSize from "@rehooks/window-size";
 import Particles from "react-particles-js";
 //
 import { Router } from "components/Router";
@@ -8,7 +9,10 @@ import { Router } from "components/Router";
 import "./app.css";
 
 function App() {
+  const { outerWidth: width, outerHeight: height } = useWindowSize();
   const { title } = useSiteData();
+  const distance = Math.min(width, height) / 8;
+  const amount = Math.floor((width * height * 80) / (1280 * 768));
   return (
     <Root>
       <Head>
@@ -21,12 +25,15 @@ function App() {
               events: {
                 onhover: {
                   enable: true,
-                  mode: "grab"
+                  mode: "repulse"
                 }
               },
               detect_on: "window"
             },
             particles: {
+              number: {
+                value: amount
+              },
               color: {
                 value: "#ffffff"
               },
@@ -35,7 +42,7 @@ function App() {
                 value: 4
               },
               opacity: {
-                value: 1
+                value: 0.8
               },
               shape: {
                 type: "circle",
@@ -53,7 +60,8 @@ function App() {
               line_linked: {
                 color: "#000000",
                 width: 2,
-                opacity: 1
+                opacity: 0.8,
+                distance
               }
             }
           }}
