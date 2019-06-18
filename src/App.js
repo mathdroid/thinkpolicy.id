@@ -9,10 +9,15 @@ import { Router } from "components/Router";
 import "./app.css";
 
 function App() {
-  const { outerWidth: width, outerHeight: height } =
+  const { outerWidth: width, outerHeight: height, innerWidth, innerHeight } =
     typeof window !== "undefined"
       ? useWindowSize()
-      : { outerWidth: 1280, outerHeight: 768 };
+      : {
+          outerWidth: 1280,
+          outerHeight: 768,
+          innerHeight: 768,
+          innerWidth: 1280
+        };
   const { title } = useSiteData();
   const distance = Math.min(width, height) / 8;
   const amount = Math.floor((width * height * 80) / (1280 * 768));
@@ -22,6 +27,9 @@ function App() {
         <title>{title}</title>
       </Head>
       <div>
+        <p>
+          {JSON.stringify({ width, height, innerHeight, innerWidth }, null, 2)}
+        </p>
         <Particles
           params={{
             interactivity: {
