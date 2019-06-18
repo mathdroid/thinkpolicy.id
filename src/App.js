@@ -9,7 +9,10 @@ import { Router } from "components/Router";
 import "./app.css";
 
 function App() {
-  const { outerWidth: width, outerHeight: height } = useWindowSize();
+  const { outerWidth: width, outerHeight: height } =
+    typeof window !== "undefined"
+      ? useWindowSize()
+      : { outerWidth: 1280, outerHeight: 768 };
   const { title } = useSiteData();
   const distance = Math.min(width, height) / 8;
   const amount = Math.floor((width * height * 80) / (1280 * 768));
