@@ -21,23 +21,28 @@ function App() {
               events: {
                 onhover: {
                   enable: true,
-                  mode: "repulse"
+                  mode: "grab"
                 }
               },
               detect_on: "window"
             },
             particles: {
               color: {
-                value: "#000000"
+                value: "#ffffff"
               },
+
               size: {
-                value: 5
+                value: 4
               },
               opacity: {
                 value: 1
               },
               shape: {
-                type: "circle"
+                type: "circle",
+                stroke: {
+                  color: "#000000",
+                  width: 8
+                }
               },
               move: {
                 enable: true,
@@ -46,7 +51,9 @@ function App() {
                 out_mode: "out"
               },
               line_linked: {
-                color: "#000000"
+                color: "#000000",
+                width: 2,
+                opacity: 1
               }
             }
           }}
