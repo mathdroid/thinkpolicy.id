@@ -11,6 +11,11 @@ body {
   padding: 0;
 }
 
+p,
+input {
+  margin-top: 2rem;
+}
+
 a {
   text-decoration: none;
   color: #108db8;
@@ -45,18 +50,20 @@ img.logo {
   left: 2rem;
   width: 4rem;
   height: auto;
+  z-index: -2;
 }
 
 input {
   padding: 0.5rem 1rem;
-  /* border: 1px #000; */
+  border: solid 1px #000;
+  border-radius: 1rem 0 0 1rem;
+  min-width: 50%;
 }
 
 button {
-  margin-left: 1rem;
   padding: 0.5rem 1rem;
   background-color: black;
   color: white;
-  border: 1px transparent;
-  box-shadow: none;
+  border: solid 1px #000;
+  border-radius: 0 1rem 1rem 0;
 }

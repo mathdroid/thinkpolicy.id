@@ -6,10 +6,11 @@ import Particles from "react-particles-js";
 //
 import { Router } from "components/Router";
 
+import "normalize.css";
 import "./app.css";
 
 function App() {
-  const { outerWidth, outerHeight, innerWidth: width, innerHeight: height } =
+  const { innerWidth: width, innerHeight: height } =
     typeof window !== "undefined"
       ? useWindowSize()
       : {
@@ -47,7 +48,7 @@ function App() {
               },
 
               size: {
-                value: 4
+                value: 3
               },
               opacity: {
                 value: 0.8
