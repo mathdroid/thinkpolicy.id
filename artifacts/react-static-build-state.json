@@ -1,0 +1,61 @@
+{
+  "entry": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/index.js",
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "plugins": [
+    [
+      "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      {
+        "location": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages"
+      }
+    ],
+    "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/node_modules/react-static-plugin-reach-router/browser.api.js",
+    "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/node_modules/react-static-plugin-sitemap/dist/node.api.js",
+    "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id"
+  ],
+  "paths": {
+    "ROOT": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id",
+    "SRC": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src",
+    "DIST": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/dist",
+    "ASSETS": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/dist",
+    "PLUGINS": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/plugins",
+    "TEMP": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/tmp",
+    "ARTIFACTS": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/artifacts",
+    "PUBLIC": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/public",
+    "NODE_MODULES": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/node_modules",
+    "EXCLUDE_MODULES": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/node_modules",
+    "PACKAGE": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/package.json",
+    "HTML_TEMPLATE": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/dist/index.html",
+    "STATIC_DATA": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/dist/staticData"
+  },
+  "devServer": {
+    "host": "http://localhost",
+    "port": 3000
+  },
+  "babelExcludes": [],
+  "siteRoot": "",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
