@@ -17,15 +17,16 @@ function App() {
       <div>
         <Particles
           params={{
-            particles: {
-              interactivity: {
-                events: {
-                  onhover: {
-                    enable: true,
-                    mode: "repulse"
-                  }
+            interactivity: {
+              events: {
+                onhover: {
+                  enable: true,
+                  mode: "repulse"
                 }
               },
+              detect_on: "window"
+            },
+            particles: {
               color: {
                 value: "#000000"
               },
@@ -54,7 +55,7 @@ function App() {
             position: "fixed",
             top: 0,
             left: 0,
-            zIndex: 0
+            zIndex: -1
           }}
         />
       </div>
