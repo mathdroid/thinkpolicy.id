@@ -11,9 +11,12 @@ body {
   padding: 0;
 }
 
-p,
-input {
+p {
   margin-top: 2rem;
+}
+
+input {
+  margin-bottom: 1rem;
 }
 
 a {
@@ -56,8 +59,8 @@ img.logo {
 input {
   padding: 0.5rem 1rem;
   border: solid 1px #000;
-  border-radius: 1rem 0 0 1rem;
-  min-width: 50%;
+  width: calc(100% - 2rem);
+  /* border-radius: 1rem 0 0 1rem; */
 }
 
 button {
@@ -65,5 +68,9 @@ button {
   background-color: black;
   color: white;
   border: solid 1px #000;
-  border-radius: 0 1rem 1rem 0;
+  /* border-radius: 0 1rem 1rem 0; */
+}
+
+.hidden {
+  display: none;
 }
