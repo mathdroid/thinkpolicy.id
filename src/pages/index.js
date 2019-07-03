@@ -36,6 +36,8 @@ export default () => {
         <label>
           Organisasi: <input type="text" name="organization" />
         </label>
+        <input type="hidden" name="form-name" value="signup" />
+
         <br />
         <button type="submit">{cta}</button>
       </form>

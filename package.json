@@ -13,6 +13,7 @@
     "@rehooks/window-size": "^1.0.2",
     "axios": "^0.18.0",
     "dotenv": "^8.0.0",
+    "formik": "^1.5.7",
     "google-spreadsheet": "^2.0.7",
     "normalize.css": "^8.0.1",
     "react": "^16.8.2",
