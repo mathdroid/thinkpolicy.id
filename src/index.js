@@ -4,6 +4,7 @@ import { AppContainer } from "react-hot-loader";
 
 // Your top level component
 import App from "./App";
+// import ReactGA from "react-ga";
 
 // Export your top level component as JSX (for static rendering)
 export default App;
@@ -36,4 +37,6 @@ if (typeof document !== "undefined") {
       render(App);
     });
   }
+
+  // ReactGA.initialize();
 }

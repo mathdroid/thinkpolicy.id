@@ -4,7 +4,7 @@ import { useSiteData } from "react-static";
 export default () => {
   const { headline, subheadline, cta } = useSiteData();
   return (
-    <div>
+    <>
       <h1>{headline}</h1>
       <p>{subheadline}</p>
       <form
@@ -41,6 +41,6 @@ export default () => {
         <br />
         <button type="submit">{cta}</button>
       </form>
-    </div>
+    </>
   );
 };
