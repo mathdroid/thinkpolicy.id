@@ -26,7 +26,7 @@ const initialValues = {
   name: "",
   birthyear: "",
   organization: "",
-  contact_me_by_fax_only: true
+  contact_me_by_fax_only: false
 };
 
 const encode = data => {
@@ -75,24 +75,24 @@ export default () => {
           render={formikProps => (
             <form
               name="signup"
-              netlify-honeypot="contact_me_by_fax_only"
+              // netlify-honeypot="contact_me_by_fax_only"
               data-netlify="true"
               onReset={formikProps.handleReset}
               onSubmit={formikProps.handleSubmit}
             >
-              <Field
+              {/* <Field
                 name="contact_me_by_fax_only"
                 render={({ field }) => (
                   <input
                     className="hidden"
                     type="checkbox"
                     name="contact_me_by_fax_only"
-                    tabindex="-1"
-                    autocomplete="off"
+                    tabIndex="-1"
+                    autoComplete="off"
                     {...field}
                   />
                 )}
-              />
+              /> */}
               <Field
                 name="email"
                 render={({ field }) => (
@@ -147,38 +147,6 @@ export default () => {
           )}
         />
       )}
-      {/* <form
-        name="signup"
-        method="POST"
-      >
-        <input
-          className="hidden"
-          type="checkbox"
-          name="contact_me_by_fax_only"
-          value="1"
-          tabindex="-1"
-          autocomplete="off"
-        />
-        <label>
-          Email: <input type="text" name="email" />
-        </label>
-        <br />
-        <label>
-          Nama: <input type="text" name="name" />
-        </label>
-        <br />
-        <label>
-          Tahun Kelahiran: <input type="text" name="birthyear" />
-        </label>
-        <br />
-        <label>
-          Organisasi: <input type="text" name="organization" />
-        </label>
-        <input type="hidden" name="form-name" value="signup" />
-
-        <br />
-        <button type="submit">{cta}</button>
-      </form> */}
     </>
   );
 };
