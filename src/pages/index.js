@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSiteData } from "react-static";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import fetch from "isomorphic-unfetch";
 
