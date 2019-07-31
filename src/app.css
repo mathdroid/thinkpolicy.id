@@ -65,6 +65,11 @@ input {
   /* border-radius: 1rem 0 0 1rem; */
 }
 
+input.error {
+  border: solid 1px #e55;
+  box-shadow: 0 4px 4px 0 rgba(240, 80, 80, 0.25);
+}
+
 button {
   padding: 0.5rem 1rem;
   background-color: black;

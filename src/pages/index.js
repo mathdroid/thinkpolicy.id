@@ -35,6 +35,8 @@ const encode = data => {
     .join("&");
 };
 
+const ErrorComponent = props => <span {...props} style={{ color: "#e55" }} />;
+
 export default () => {
   const { headline, subheadline, cta } = useSiteData();
   const [hasSubmitted, setHasSubmitted] = useState(false);
@@ -95,10 +97,13 @@ export default () => {
               /> */}
               <Field
                 name="email"
-                render={({ field }) => (
+                render={({ field, form: { touched, errors } }) => (
                   <label>
                     <h3 style={{ marginBottom: 0 }}>Email: </h3>
                     <input
+                      className={
+                        touched[field.name] && errors[field.name] && "error"
+                      }
                       type="text"
                       {...field}
                       placeholder="saya@perusahaan.com"
@@ -106,40 +111,61 @@ export default () => {
                   </label>
                 )}
               />
-              <ErrorMessage name="email" />
+              <ErrorMessage name="email" component={ErrorComponent} />
 
               <Field
                 name="name"
-                render={({ field }) => (
+                render={({ field, form: { touched, errors } }) => (
                   <label>
                     <h3 style={{ marginBottom: 0 }}>Nama: </h3>
-                    <input type="text" {...field} placeholder="Odi" />
+                    <input
+                      className={
+                        touched[field.name] && errors[field.name] && "error"
+                      }
+                      type="text"
+                      {...field}
+                      placeholder="Odi"
+                    />
                   </label>
                 )}
               />
-              <ErrorMessage name="name" />
+              <ErrorMessage name="name" component={ErrorComponent} />
 
               <Field
                 name="birthyear"
-                render={({ field }) => (
+                render={({ field, form: { touched, errors } }) => (
                   <label>
                     <h3 style={{ marginBottom: 0 }}>Tahun Kelahiran: </h3>
-                    <input type="text" {...field} placeholder="1990" />
+                    <input
+                      className={
+                        touched[field.name] && errors[field.name] && "error"
+                      }
+                      type="text"
+                      {...field}
+                      placeholder="1990"
+                    />
                   </label>
                 )}
               />
-              <ErrorMessage name="birthyear" />
+              <ErrorMessage name="birthyear" component={ErrorComponent} />
 
               <Field
                 name="organization"
-                render={({ field }) => (
+                render={({ field, form: { touched, errors } }) => (
                   <label>
                     <h3 style={{ marginBottom: 0 }}>Organisasi: </h3>
-                    <input type="text" {...field} placeholder="Personal" />
+                    <input
+                      className={
+                        touched[field.name] && errors[field.name] && "error"
+                      }
+                      type="text"
+                      {...field}
+                      placeholder="Personal"
+                    />
                   </label>
                 )}
               />
-              <ErrorMessage name="organization" />
+              <ErrorMessage name="organization" component={ErrorComponent} />
               <button type="submit" disabled={formikProps.isSubmitting}>
                 {cta}
               </button>
