@@ -2,6 +2,7 @@ import React from "react";
 import { useSiteData } from "react-static";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import fetch from "isomorphic-unfetch";
 
 const signupSchema = Yup.object().shape({
   email: Yup.string()
@@ -32,11 +33,12 @@ const encode = data => {
     .join("&");
 };
 
-const handleSubmit = () => {
-  fetch("/", {
+const handleSubmit = values => {
+  const encoded = encode({ "form-name": "signup", ...values });
+  fetch(`/?${encoded}`, {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: encode({ "form-name": "signup", ...this.state })
+    body: encoded
   })
     .then(() => alert("Success!"))
     .catch(error => alert(error));
@@ -53,8 +55,10 @@ export default () => {
       <Formik
         initialValues={initialValues}
         validationSchema={signupSchema}
-        onSubmit={async (_, actions) => {
-          await handleSubmit();
+        onSubmit={async (values, actions) => {
+          // alert(JSON.stringify(values));
+          const data = await handleSubmit(values);
+          alert(JSON.stringify(data));
           actions.setSubmitting(false);
         }}
       >
