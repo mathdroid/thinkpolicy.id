@@ -12,8 +12,8 @@ const signupSchema = Yup.object().shape({
     .min(2)
     .required(`We'd love to know your name.`),
   birthyear: Yup.number()
-    .min(1989, "You need to be below 30")
-    .max(2001, "You need to be above 18")
+    .min(1900, "Not *that* old 🤔")
+    .max(2019, "🤔")
     .required(`We'd love to know your age`),
   organization: Yup.string().required(
     `What organization are you in? If not applicable, type 'Personal'`
