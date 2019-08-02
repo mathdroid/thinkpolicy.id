@@ -59,6 +59,8 @@ export default () => {
 
   return (
     <>
+      <img src="/logo.jpg" className="logo" alt="Think Policy logo" />
+
       <h1>{headline}</h1>
       <p>{subheadline}</p>
       {hasSubmitted ? (

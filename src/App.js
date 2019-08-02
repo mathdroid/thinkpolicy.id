@@ -83,7 +83,6 @@ function App() {
           }}
         />
       </div>
-      <img src="/logo.jpg" className="logo" alt="Think Policy logo" />
       <main className="content">
         <Router>
           <Routes path="*" />

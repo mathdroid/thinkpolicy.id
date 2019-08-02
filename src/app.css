@@ -42,18 +42,13 @@ nav a {
 
 .content {
   padding: 2rem;
-  margin-top: 8rem;
   max-width: 36rem;
   padding-bottom: 8rem;
 }
 
 img.logo {
-  position: fixed;
-  top: 2rem;
-  left: 2rem;
   width: 4rem;
   height: auto;
-  z-index: -2;
 }
 
 input {
