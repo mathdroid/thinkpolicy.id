@@ -162,7 +162,7 @@ export default () => {
                       }
                       type="text"
                       {...field}
-                      placeholder="Personal"
+                      placeholder="Badan Kebijakan Publik"
                     />
                   </label>
                 )}
