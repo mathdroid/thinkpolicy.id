@@ -1,5 +1,6 @@
 * {
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body {
@@ -57,7 +58,6 @@ input {
   border: solid 1px #000;
   width: calc(100% - 2rem);
   box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.25);
-  /* border-radius: 1rem 0 0 1rem; */
 }
 
 input.error {
@@ -74,13 +74,17 @@ button {
   max-width: 8rem;
   box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.25);
   transition: all ease-in-out 0.075s;
-  /* border-radius: 0 1rem 1rem 0; */
 }
 
 button:hover {
   opacity: 0.85;
   transform: translateY(-2px);
   box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.25);
+}
+
+.multiselect input,
+.multiselect button {
+  box-shadow: none;
 }
 
 .hidden {
