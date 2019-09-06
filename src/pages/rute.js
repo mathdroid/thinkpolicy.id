@@ -4,6 +4,8 @@ import { Formik, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import fetch from "isomorphic-unfetch";
 
+import MultiSelect from "../components/MultiSelect";
+
 const signupSchema = Yup.object().shape({
   email: Yup.string()
     .email("Email does not seem valid.")
@@ -17,16 +19,14 @@ const signupSchema = Yup.object().shape({
     .required(`We'd love to know your age`),
   organization: Yup.string().required(
     `What organization are you in? If not applicable, type 'Personal'`
-  ),
-  contact_me_by_fax_only: Yup.boolean()
+  )
 });
 
 const initialValues = {
   email: "",
   name: "",
   birthyear: "",
-  organization: "",
-  contact_me_by_fax_only: false
+  organization: ""
 };
 
 const encode = data => {
@@ -38,31 +38,41 @@ const encode = data => {
 const ErrorComponent = props => <span {...props} style={{ color: "#e55" }} />;
 
 export default () => {
-  const { headline, subheadline, cta } = useSiteData();
+  const { headlineRute, subheadlineRute, cta } = useSiteData();
   const [hasSubmitted, setHasSubmitted] = useState(false);
   const [submittedName, setSubmittedName] = useState("");
-  const handleSubmit = values => {
-    const encoded = encode({ "form-name": "signup", ...values });
-    fetch(`/`, {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encoded
-    })
-      .then(() => {
-        setSubmittedName(values.name);
-        setHasSubmitted(true);
-      })
-      .catch(error => alert(error));
+  const [selectedItems, setSelectedItems] = useState([]);
 
-    // e.preventDefault();
+  const handleSubmit = values => {
+    if (selectedItems.length > 0) {
+      const body = {
+        "form-name": "rute",
+        ...values,
+        interests: selectedItems.join(",")
+      };
+      const encoded = encode(body);
+      fetch(`/`, {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encoded
+      })
+        .then(() => {
+          setSubmittedName(values.name);
+          setHasSubmitted(true);
+        })
+        .catch(error => alert(error));
+    } else {
+      alert("Please fill out your interests");
+    }
   };
 
   return (
     <>
       <img src="/logo.jpg" className="logo" alt="Think Policy logo" />
 
-      <h1>{headline}</h1>
-      <p>{subheadline}</p>
+      <h1>{headlineRute}</h1>
+      <p>{subheadlineRute}</p>
+
       {hasSubmitted ? (
         <h2>
           Thanks for submitting, {submittedName}! We will reach out to you.
@@ -78,25 +88,12 @@ export default () => {
           }}
           render={formikProps => (
             <form
-              name="signup"
+              name="rute"
               // netlify-honeypot="contact_me_by_fax_only"
               data-netlify="true"
               onReset={formikProps.handleReset}
               onSubmit={formikProps.handleSubmit}
             >
-              {/* <Field
-                name="contact_me_by_fax_only"
-                render={({ field }) => (
-                  <input
-                    className="hidden"
-                    type="checkbox"
-                    name="contact_me_by_fax_only"
-                    tabIndex="-1"
-                    autoComplete="off"
-                    {...field}
-                  />
-                )}
-              /> */}
               <Field
                 name="email"
                 render={({ field, form: { touched, errors } }) => (
@@ -114,7 +111,6 @@ export default () => {
                 )}
               />
               <ErrorMessage name="email" component={ErrorComponent} />
-
               <Field
                 name="name"
                 render={({ field, form: { touched, errors } }) => (
@@ -130,9 +126,9 @@ export default () => {
                     />
                   </label>
                 )}
-              />
+              />{" "}
+              <br />
               <ErrorMessage name="name" component={ErrorComponent} />
-
               <Field
                 name="birthyear"
                 render={({ field, form: { touched, errors } }) => (
@@ -148,9 +144,9 @@ export default () => {
                     />
                   </label>
                 )}
-              />
+              />{" "}
+              <br />
               <ErrorMessage name="birthyear" component={ErrorComponent} />
-
               <Field
                 name="organization"
                 render={({ field, form: { touched, errors } }) => (
@@ -166,11 +162,23 @@ export default () => {
                     />
                   </label>
                 )}
-              />
-              <ErrorMessage name="organization" component={ErrorComponent} />
-              <br/>
-
-              <button type="submit" disabled={formikProps.isSubmitting}>
+              />{" "}
+              <br />
+              <ErrorMessage
+                name="organization"
+                component={ErrorComponent}
+              />{" "}
+              <MultiSelect
+                selectedItems={selectedItems}
+                setSelectedItems={setSelectedItems}
+              />{" "}
+              <br />
+              <button
+                type="submit"
+                disabled={
+                  formikProps.isSubmitting && selectedItems.length === 0
+                }
+              >
                 {cta}
               </button>
             </form>
