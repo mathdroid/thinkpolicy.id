@@ -9,13 +9,22 @@ if (
 }
 
 const GoogleSpreadsheet = require("google-spreadsheet");
+const googleSheetID = process.env.SHEETS_ID;
+const doc = new GoogleSpreadsheet(googleSheetID);
 
-const SHEET_TITLES = Object.freeze({
+export const SHEET_TITLES = Object.freeze({
   CMS: "CMS",
-  data: "Data"
+  data: "Data",
+  rute: "rute-form"
 });
 
-async function getWorksheetIndexFromTitle(doc, title) {
+export async function addRow(sheetId, rowData) {
+  await new Promise(resolve => {
+    doc.addRow(sheetId, rowData, resolve);
+  });
+}
+
+export async function getWorksheetIndexFromTitle(doc, title) {
   const { worksheets } = await getInfo(doc);
   return 1 + worksheets.findIndex(sheet => sheet.title === title);
 }
@@ -58,8 +67,7 @@ async function getInfo(doc) {
   );
 }
 
-async function getSiteDataFromSheet(sheetId, serviceAccount) {
-  const doc = new GoogleSpreadsheet(sheetId);
+async function getSiteDataFromSheet(serviceAccount) {
   await new Promise(resolve =>
     doc.useServiceAccountAuth(serviceAccount, resolve)
   );

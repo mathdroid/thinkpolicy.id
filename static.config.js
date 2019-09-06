@@ -2,7 +2,6 @@ import path from "path";
 
 import { getSiteDataFromSheet } from "./util/sheets";
 
-const googleSheetID = process.env.SHEETS_ID;
 const serviceAccount = {
   client_email: process.env.SHEETS_CLIENT_EMAIL,
   private_key: Buffer.from(
@@ -13,7 +12,7 @@ const serviceAccount = {
 
 export default {
   getSiteData: async () => {
-    const sheetData = await getSiteDataFromSheet(googleSheetID, serviceAccount);
+    const sheetData = await getSiteDataFromSheet(serviceAccount);
     console.log(sheetData);
     return {
       ...sheetData
