@@ -110,52 +110,101 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 26);
+/******/ 	return __webpack_require__(__webpack_require__.s = 45);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = require("react");
+module.exports = require("@emotion/core");
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports) {
 
-module.exports = require("react-static");
+module.exports = require("react");
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _utils = __webpack_require__(10);
-
-var requireById = function requireById(id) {
-  if (!(0, _utils.isWebpack)() && typeof id === 'string') {
-    return __webpack_require__(30)("" + id);
-  }
-
-  return __webpack_require__('' + id);
-};
-
-exports["default"] = requireById;
+module.exports = require("@babel/runtime/helpers/extends");
 
 /***/ }),
 /* 3 */
+/***/ (function(module, exports) {
+
+module.exports = require("formik");
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/defineProperty");
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+module.exports = require("yup");
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports) {
+
+module.exports = require("react-static");
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/regenerator");
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/assertThisInitialized");
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/slicedToArray");
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports) {
+
+module.exports = require("@reach/router");
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports) {
+
+module.exports = require("path");
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports) {
+
+module.exports = require("babel-plugin-universal-import/universalImport");
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/asyncToGenerator");
+
+/***/ }),
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 
-var _typeof = __webpack_require__(9);
+var _typeof = __webpack_require__(22);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -194,7 +243,7 @@ var _createClass = function () {
   };
 }();
 
-var _requireUniversalModule = __webpack_require__(29);
+var _requireUniversalModule = __webpack_require__(48);
 
 Object.defineProperty(exports, 'CHUNK_NAMES', {
   enumerable: true,
@@ -209,7 +258,7 @@ Object.defineProperty(exports, 'MODULE_IDS', {
   }
 });
 
-var _reportChunks = __webpack_require__(31);
+var _reportChunks = __webpack_require__(50);
 
 Object.defineProperty(exports, 'ReportChunks', {
   enumerable: true,
@@ -219,25 +268,25 @@ Object.defineProperty(exports, 'ReportChunks', {
 });
 exports["default"] = universal;
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(15);
+var _propTypes = __webpack_require__(33);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _hoistNonReactStatics = __webpack_require__(16);
+var _hoistNonReactStatics = __webpack_require__(34);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _vm = __webpack_require__(32);
+var _vm = __webpack_require__(51);
 
 var _requireUniversalModule2 = _interopRequireDefault(_requireUniversalModule);
 
-var _utils = __webpack_require__(10);
+var _utils = __webpack_require__(23);
 
-var _helpers = __webpack_require__(33);
+var _helpers = __webpack_require__(52);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -632,70 +681,90 @@ function universal(asyncModule) {
     report: _propTypes2["default"].func
   }, _temp;
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(8)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(21)(module)))
 
 /***/ }),
-/* 4 */
+/* 15 */
 /***/ (function(module, exports) {
 
-module.exports = require("@reach/router");
+module.exports = require("@emotion/styled-base");
 
 /***/ }),
-/* 5 */
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _utils = __webpack_require__(23);
+
+var requireById = function requireById(id) {
+  if (!(0, _utils.isWebpack)() && typeof id === 'string') {
+    return __webpack_require__(49)("" + id);
+  }
+
+  return __webpack_require__('' + id);
+};
+
+exports["default"] = requireById;
+
+/***/ }),
+/* 17 */
 /***/ (function(module, exports) {
 
-module.exports = require("path");
+module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
 
 /***/ }),
-/* 6 */
+/* 18 */
 /***/ (function(module, exports) {
 
-module.exports = require("babel-plugin-universal-import/universalImport");
+module.exports = require("isomorphic-unfetch");
 
 /***/ }),
-/* 7 */
+/* 19 */
+/***/ (function(module, exports) {
+
+module.exports = require("downshift");
+
+/***/ }),
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 
-// EXTERNAL MODULE: external "@babel/runtime/helpers/classCallCheck"
-var classCallCheck_ = __webpack_require__(21);
-var classCallCheck_default = /*#__PURE__*/__webpack_require__.n(classCallCheck_);
-
-// EXTERNAL MODULE: external "@babel/runtime/helpers/createClass"
-var createClass_ = __webpack_require__(22);
-var createClass_default = /*#__PURE__*/__webpack_require__.n(createClass_);
-
-// EXTERNAL MODULE: external "@babel/runtime/helpers/possibleConstructorReturn"
-var possibleConstructorReturn_ = __webpack_require__(23);
-var possibleConstructorReturn_default = /*#__PURE__*/__webpack_require__.n(possibleConstructorReturn_);
-
-// EXTERNAL MODULE: external "@babel/runtime/helpers/getPrototypeOf"
-var getPrototypeOf_ = __webpack_require__(24);
-var getPrototypeOf_default = /*#__PURE__*/__webpack_require__.n(getPrototypeOf_);
-
-// EXTERNAL MODULE: external "@babel/runtime/helpers/inherits"
-var inherits_ = __webpack_require__(25);
-var inherits_default = /*#__PURE__*/__webpack_require__.n(inherits_);
+// EXTERNAL MODULE: external "@emotion/core"
+var core_ = __webpack_require__(0);
 
 // EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(0);
-var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+var external_react_ = __webpack_require__(1);
 
 // EXTERNAL MODULE: external "react-static"
-var external_react_static_ = __webpack_require__(1);
+var external_react_static_ = __webpack_require__(6);
+
+// EXTERNAL MODULE: external "@rehooks/window-size"
+var window_size_ = __webpack_require__(40);
+var window_size_default = /*#__PURE__*/__webpack_require__.n(window_size_);
+
+// EXTERNAL MODULE: external "react-particles-js"
+var external_react_particles_js_ = __webpack_require__(41);
+var external_react_particles_js_default = /*#__PURE__*/__webpack_require__.n(external_react_particles_js_);
 
 // EXTERNAL MODULE: external "@reach/router"
-var router_ = __webpack_require__(4);
+var router_ = __webpack_require__(10);
 
 // CONCATENATED MODULE: /Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/components/Router.js
 
+// EXTERNAL MODULE: external "normalize.css"
+var external_normalize_css_ = __webpack_require__(59);
+
 // EXTERNAL MODULE: /Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/app.css
-var app = __webpack_require__(42);
+var app = __webpack_require__(60);
 
 // CONCATENATED MODULE: /Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/App.js
-
-
 
 
 
@@ -705,73 +774,85 @@ var app = __webpack_require__(42);
 
 
 
-var App_ErrorBoundary =
-/*#__PURE__*/
-function (_React$Component) {
-  inherits_default()(ErrorBoundary, _React$Component);
-
-  function ErrorBoundary(props) {
-    var _this;
-
-    classCallCheck_default()(this, ErrorBoundary);
-
-    _this = possibleConstructorReturn_default()(this, getPrototypeOf_default()(ErrorBoundary).call(this, props));
-    _this.state = {
-      hasError: false
-    };
-    return _this;
-  }
-
-  createClass_default()(ErrorBoundary, [{
-    key: "componentDidCatch",
-    value: function componentDidCatch(error, info) {
-      // You can also log the error to an error reporting service
-      console.error(error, info);
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      if (this.state.hasError) {
-        // You can render any custom fallback UI
-        return external_react_default.a.createElement("h1", null, "Something went wrong.");
-      }
-
-      return this.props.children;
-    }
-  }], [{
-    key: "getDerivedStateFromError",
-    value: function getDerivedStateFromError(error) {
-      // Update state so the next render will show the fallback UI.
-      return {
-        hasError: true
-      };
-    }
-  }]);
-
-  return ErrorBoundary;
-}(external_react_default.a.Component);
 
 function App() {
+  var _ref = typeof window !== "undefined" ? window_size_default()() : {
+    outerWidth: 1280,
+    outerHeight: 768,
+    innerHeight: 768,
+    innerWidth: 1280
+  },
+      width = _ref.innerWidth,
+      height = _ref.innerHeight;
+
   var _useSiteData = Object(external_react_static_["useSiteData"])(),
       title = _useSiteData.title;
 
-  return external_react_default.a.createElement(external_react_static_["Root"], null, external_react_default.a.createElement(external_react_static_["Head"], null, external_react_default.a.createElement("title", null, title)), external_react_default.a.createElement("img", {
-    src: "/logo.jpg",
-    className: "logo",
-    alt: "Think Policy logo"
-  }), external_react_default.a.createElement("main", {
+  var distance = Math.min(width, height) / 8;
+  var amount = Math.floor(width * height * 80 / (1280 * 768));
+  return Object(core_["jsx"])(external_react_static_["Root"], null, Object(core_["jsx"])(external_react_static_["Head"], null, Object(core_["jsx"])("title", null, title)), Object(core_["jsx"])("div", null, Object(core_["jsx"])(external_react_particles_js_default.a, {
+    params: {
+      interactivity: {
+        events: {
+          onhover: {
+            enable: true,
+            mode: "repulse"
+          }
+        },
+        detect_on: "window"
+      },
+      particles: {
+        number: {
+          value: amount
+        },
+        color: {
+          value: "#ffffff"
+        },
+        size: {
+          value: 3
+        },
+        opacity: {
+          value: 0.8
+        },
+        shape: {
+          type: "circle",
+          stroke: {
+            color: "#000000",
+            width: 8
+          }
+        },
+        move: {
+          enable: true,
+          direction: "top-right",
+          speed: 2,
+          out_mode: "out"
+        },
+        line_linked: {
+          color: "#000000",
+          width: 2,
+          opacity: 0.8,
+          distance: distance
+        }
+      }
+    },
+    style: {
+      width: "100%",
+      position: "fixed",
+      top: 0,
+      left: 0,
+      zIndex: -1
+    }
+  })), Object(core_["jsx"])("main", {
     className: "content"
-  }, external_react_default.a.createElement(router_["Router"], null, external_react_default.a.createElement(external_react_static_["Routes"], {
+  }, Object(core_["jsx"])(router_["Router"], null, Object(core_["jsx"])(external_react_static_["Routes"], {
     path: "*"
   }))));
 }
 
-/* harmony default export */ var src_App = __webpack_exports__["a"] = (function (props) {
-  return external_react_default.a.createElement(App_ErrorBoundary, null, external_react_default.a.createElement(App, props));
-});
+/* harmony default export */ var src_App = __webpack_exports__["a"] = (App);
 
 /***/ }),
-/* 8 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = function (module) {
@@ -800,19 +881,19 @@ module.exports = function (module) {
 };
 
 /***/ }),
-/* 9 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/typeof");
 
 /***/ }),
-/* 10 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof2 = __webpack_require__(9);
+var _typeof2 = __webpack_require__(22);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -839,11 +920,11 @@ var _typeof = typeof Symbol === "function" && _typeof2(Symbol.iterator) === "sym
   return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
 };
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var React = _interopRequireWildcard(_react);
 
-var _requireById = __webpack_require__(2);
+var _requireById = __webpack_require__(16);
 
 var _requireById2 = _interopRequireDefault(_requireById);
 
@@ -972,36 +1053,66 @@ var cacheProm = exports.cacheProm = function cacheProm(pr, chunkName, props, pro
 };
 
 /***/ }),
-/* 11 */
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom");
 
 /***/ }),
-/* 12 */
+/* 25 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/classCallCheck");
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/createClass");
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/possibleConstructorReturn");
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/getPrototypeOf");
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+module.exports = require("@babel/runtime/helpers/inherits");
+
+/***/ }),
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19);
-/* harmony import */ var _node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(38);
+/* harmony import */ var _Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0__);
 // Imports
  // Plugins
 
 var plugins = [{
-  location: "../node_modules/react-static-plugin-source-filesystem",
+  location: "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/node_modules/react-static-plugin-source-filesystem",
   plugins: [],
   hooks: {}
 }, {
-  location: "../node_modules/react-static-plugin-reach-router",
+  location: "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/node_modules/react-static-plugin-reach-router",
   plugins: [],
-  hooks: _node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0___default()({})
+  hooks: _Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_static_plugin_reach_router_browser_api_js__WEBPACK_IMPORTED_MODULE_0___default()({})
 }, {
-  location: "../node_modules/react-static-plugin-sitemap/dist",
+  location: "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/node_modules/react-static-plugin-sitemap/dist",
   plugins: [],
   hooks: {}
 }, {
-  location: "..",
+  location: "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id",
   plugins: [],
   hooks: {}
 }]; // Export em!
@@ -1009,140 +1120,1268 @@ var plugins = [{
 /* harmony default export */ __webpack_exports__["default"] = (plugins);
 
 /***/ }),
-/* 13 */
+/* 31 */
 /***/ (function(module, exports) {
 
 module.exports = require("/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/node_modules/react-static/lib/browser");
 
 /***/ }),
-/* 14 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__dirname) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "notFoundTemplate", function() { return notFoundTemplate; });
-/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
+/* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
 /* harmony import */ var babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(3);
-/* harmony import */ var _Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(14);
+/* harmony import */ var _Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
 
 
 
-Object(_Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3__["setHasBabelPlugin"])();
+
+
+
+Object(_Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_4__["setHasBabelPlugin"])();
 var universalOptions = {
   loading: function loading() {
     return null;
   },
   error: function error(props) {
     console.error(props.error);
-    return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, "An error occurred loading this page's template. More information is available in the console.");
+    return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_2__["jsx"])("div", null, "An error occurred loading this page's template. More information is available in the console.");
   },
   ignoreBabelRename: true
 };
-var t_0 = _Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
-  id: "../src/pages/404.js",
+var t_0 = _Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_4___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/404.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | src/pages/404 */).then(__webpack_require__.bind(null, 17))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/404 */).then(__webpack_require__.bind(null, 35))]).then(function (proms) {
       return proms[0];
     });
   },
   path: function path() {
-    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '../src/pages/404.js');
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/404.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(17);
+    return /*require.resolve*/(35);
   },
   chunkName: function chunkName() {
-    return "src/pages/404";
+    return "Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/404";
   }
 }), universalOptions);
-t_0.template = '../src/pages/404.js';
-var t_1 = _Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_3___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
-  id: "../src/pages/index.js",
+t_0.template = '/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/404.js';
+var t_1 = _Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_4___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/index.js",
   load: function load() {
-    return Promise.all([Promise.resolve(/* import() | src/pages/index */).then(__webpack_require__.bind(null, 18))]).then(function (proms) {
+    return Promise.all([Promise.resolve(/* import() | Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/index */).then(__webpack_require__.bind(null, 36))]).then(function (proms) {
       return proms[0];
     });
   },
   path: function path() {
-    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '../src/pages/index.js');
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/index.js');
   },
   resolve: function resolve() {
-    return /*require.resolve*/(18);
+    return /*require.resolve*/(36);
   },
   chunkName: function chunkName() {
-    return "src/pages/index";
+    return "Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/index";
   }
 }), universalOptions);
-t_1.template = '../src/pages/index.js'; // Template Map
+t_1.template = '/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/index.js';
+var t_2 = _Users_odi_WORK_THINKPOLICY_thinkpolicy_id_node_modules_react_universal_component_dist_index_js__WEBPACK_IMPORTED_MODULE_4___default()(babel_plugin_universal_import_universalImport__WEBPACK_IMPORTED_MODULE_1___default()({
+  id: "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/rute.js",
+  load: function load() {
+    return Promise.all([Promise.resolve(/* import() | Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/rute */).then(__webpack_require__.bind(null, 37))]).then(function (proms) {
+      return proms[0];
+    });
+  },
+  path: function path() {
+    return path__WEBPACK_IMPORTED_MODULE_0___default.a.join(__dirname, '/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/rute.js');
+  },
+  resolve: function resolve() {
+    return /*require.resolve*/(37);
+  },
+  chunkName: function chunkName() {
+    return "Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/rute";
+  }
+}), universalOptions);
+t_2.template = '/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/rute.js'; // Template Map
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  '../src/pages/404.js': t_0,
-  '../src/pages/index.js': t_1 // Not Found Template
+  '/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/404.js': t_0,
+  '/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/index.js': t_1,
+  '/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/rute.js': t_2 // Not Found Template
 
 });
-var notFoundTemplate = "../src/pages/404.js";
+var notFoundTemplate = "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/404.js";
 /* WEBPACK VAR INJECTION */}.call(this, "/"))
 
 /***/ }),
-/* 15 */
+/* 33 */
 /***/ (function(module, exports) {
 
 module.exports = require("prop-types");
 
 /***/ }),
-/* 16 */
+/* 34 */
 /***/ (function(module, exports) {
 
 module.exports = require("hoist-non-react-statics");
 
 /***/ }),
-/* 17 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "404 - Oh no's! We couldn't find that page :("));
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("h1", null, "404 - Oh no's! We couldn't find that page :("));
 });
 
 /***/ }),
-/* 18 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
+/* harmony import */ var _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
+/* harmony import */ var _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9);
+/* harmony import */ var _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(0);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6);
+/* harmony import */ var react_static__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_static__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(3);
+/* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(formik__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(5);
+/* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(yup__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(18);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(10);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_reach_router__WEBPACK_IMPORTED_MODULE_11__);
 
+
+
+
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _babel_runtime_helpers_defineProperty__WEBPACK_IMPORTED_MODULE_2___default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
+
+
+
+var signupSchema = yup__WEBPACK_IMPORTED_MODULE_9__["object"]().shape({
+  email: yup__WEBPACK_IMPORTED_MODULE_9__["string"]().email("Email does not seem valid.").required("We need your email address."),
+  name: yup__WEBPACK_IMPORTED_MODULE_9__["string"]().min(2).required("We'd love to know your name."),
+  birthyear: yup__WEBPACK_IMPORTED_MODULE_9__["number"]().min(1900, "Not *that* old 🤔").max(2019, "🤔").required("We'd love to know your age"),
+  organization: yup__WEBPACK_IMPORTED_MODULE_9__["string"]().required("What organization are you in? If not applicable, type 'Personal'"),
+  contact_me_by_fax_only: yup__WEBPACK_IMPORTED_MODULE_9__["boolean"]()
+});
+var initialValues = {
+  email: "",
+  name: "",
+  birthyear: "",
+  organization: "",
+  contact_me_by_fax_only: false
+};
+
+var encode = function encode(data) {
+  return Object.keys(data).map(function (key) {
+    return encodeURIComponent(key) + "=" + encodeURIComponent(data[key]);
+  }).join("&");
+};
+
+var ErrorComponent = function ErrorComponent(props) {
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("span", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_4___default()({}, props, {
+    style: {
+      color: "#e55"
+    }
+  }));
+};
 
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  var _useSiteData = Object(react_static__WEBPACK_IMPORTED_MODULE_1__["useSiteData"])(),
+  var _useSiteData = Object(react_static__WEBPACK_IMPORTED_MODULE_7__["useSiteData"])(),
       headline = _useSiteData.headline,
       subheadline = _useSiteData.subheadline,
       cta = _useSiteData.cta;
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    style: {
-      textAlign: "center"
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_6__["useState"])(false),
+      _useState2 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_3___default()(_useState, 2),
+      hasSubmitted = _useState2[0],
+      setHasSubmitted = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_6__["useState"])(""),
+      _useState4 = _babel_runtime_helpers_slicedToArray__WEBPACK_IMPORTED_MODULE_3___default()(_useState3, 2),
+      submittedName = _useState4[0],
+      setSubmittedName = _useState4[1];
+
+  var handleSubmit = function handleSubmit(values) {
+    var encoded = encode(_objectSpread({
+      "form-name": "signup"
+    }, values));
+    isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_10___default()("/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: encoded
+    }).then(function () {
+      setSubmittedName(values.name);
+      setHasSubmitted(true);
+    })["catch"](function (error) {
+      return alert(error);
+    }); // e.preventDefault();
+  };
+
+  return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(react__WEBPACK_IMPORTED_MODULE_6___default.a.Fragment, null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("img", {
+    src: "/logo.jpg",
+    className: "logo",
+    alt: "Think Policy logo"
+  }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h1", null, headline), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("p", null, subheadline), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(_reach_router__WEBPACK_IMPORTED_MODULE_11__["Link"], {
+    to: "/rute"
+  }, ">> ", "Daftar Ruang Tengah"), hasSubmitted ? Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h2", null, "Thanks for submitting, ", submittedName, "! We will reach out to you.") : Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_8__["Formik"], {
+    initialValues: initialValues,
+    validationSchema: signupSchema,
+    onSubmit:
+    /*#__PURE__*/
+    function () {
+      var _ref = _babel_runtime_helpers_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1___default()(
+      /*#__PURE__*/
+      _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(values, actions) {
+        return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return handleSubmit(values);
+
+              case 2:
+                actions.setSubmitting(false);
+
+              case 3:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      return function (_x, _x2) {
+        return _ref.apply(this, arguments);
+      };
+    }(),
+    render: function render(formikProps) {
+      return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("form", {
+        name: "signup" // netlify-honeypot="contact_me_by_fax_only"
+        ,
+        "data-netlify": "true",
+        onReset: formikProps.handleReset,
+        onSubmit: formikProps.handleSubmit
+      }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_8__["Field"], {
+        name: "email",
+        render: function render(_ref2) {
+          var field = _ref2.field,
+              _ref2$form = _ref2.form,
+              touched = _ref2$form.touched,
+              errors = _ref2$form.errors;
+          return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h3", {
+            style: {
+              marginBottom: 0
+            }
+          }, "Email: "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("input", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_4___default()({
+            className: touched[field.name] && errors[field.name] && "error",
+            type: "text"
+          }, field, {
+            placeholder: "saya@perusahaan.com"
+          })));
+        }
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_8__["ErrorMessage"], {
+        name: "email",
+        component: ErrorComponent
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_8__["Field"], {
+        name: "name",
+        render: function render(_ref3) {
+          var field = _ref3.field,
+              _ref3$form = _ref3.form,
+              touched = _ref3$form.touched,
+              errors = _ref3$form.errors;
+          return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h3", {
+            style: {
+              marginBottom: 0
+            }
+          }, "Nama: "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("input", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_4___default()({
+            className: touched[field.name] && errors[field.name] && "error",
+            type: "text"
+          }, field, {
+            placeholder: "Odi"
+          })));
+        }
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_8__["ErrorMessage"], {
+        name: "name",
+        component: ErrorComponent
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_8__["Field"], {
+        name: "birthyear",
+        render: function render(_ref4) {
+          var field = _ref4.field,
+              _ref4$form = _ref4.form,
+              touched = _ref4$form.touched,
+              errors = _ref4$form.errors;
+          return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h3", {
+            style: {
+              marginBottom: 0
+            }
+          }, "Tahun Kelahiran: "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("input", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_4___default()({
+            className: touched[field.name] && errors[field.name] && "error",
+            type: "text"
+          }, field, {
+            placeholder: "1990"
+          })));
+        }
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_8__["ErrorMessage"], {
+        name: "birthyear",
+        component: ErrorComponent
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_8__["Field"], {
+        name: "organization",
+        render: function render(_ref5) {
+          var field = _ref5.field,
+              _ref5$form = _ref5.form,
+              touched = _ref5$form.touched,
+              errors = _ref5$form.errors;
+          return Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("label", null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("h3", {
+            style: {
+              marginBottom: 0
+            }
+          }, "Organisasi: "), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("input", _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_4___default()({
+            className: touched[field.name] && errors[field.name] && "error",
+            type: "text"
+          }, field, {
+            placeholder: "Badan Kebijakan Publik"
+          })));
+        }
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])(formik__WEBPACK_IMPORTED_MODULE_8__["ErrorMessage"], {
+        name: "organization",
+        component: ErrorComponent
+      }), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("br", null), Object(_emotion_core__WEBPACK_IMPORTED_MODULE_5__["jsx"])("button", {
+        type: "submit",
+        disabled: formikProps.isSubmitting
+      }, cta));
     }
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, headline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("blockquote", null, subheadline), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", null, cta));
+  }));
 });
 
 /***/ }),
-/* 19 */
+/* 37 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+// EXTERNAL MODULE: external "@babel/runtime/regenerator"
+var regenerator_ = __webpack_require__(7);
+var regenerator_default = /*#__PURE__*/__webpack_require__.n(regenerator_);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/asyncToGenerator"
+var asyncToGenerator_ = __webpack_require__(13);
+var asyncToGenerator_default = /*#__PURE__*/__webpack_require__.n(asyncToGenerator_);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/defineProperty"
+var defineProperty_ = __webpack_require__(4);
+var defineProperty_default = /*#__PURE__*/__webpack_require__.n(defineProperty_);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/slicedToArray"
+var slicedToArray_ = __webpack_require__(9);
+var slicedToArray_default = /*#__PURE__*/__webpack_require__.n(slicedToArray_);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/extends"
+var extends_ = __webpack_require__(2);
+var extends_default = /*#__PURE__*/__webpack_require__.n(extends_);
+
+// EXTERNAL MODULE: external "@emotion/core"
+var core_ = __webpack_require__(0);
+
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(1);
+var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
+
+// EXTERNAL MODULE: external "react-static"
+var external_react_static_ = __webpack_require__(6);
+
+// EXTERNAL MODULE: external "formik"
+var external_formik_ = __webpack_require__(3);
+
+// EXTERNAL MODULE: external "yup"
+var external_yup_ = __webpack_require__(5);
+
+// EXTERNAL MODULE: external "isomorphic-unfetch"
+var external_isomorphic_unfetch_ = __webpack_require__(18);
+var external_isomorphic_unfetch_default = /*#__PURE__*/__webpack_require__.n(external_isomorphic_unfetch_);
+
+// EXTERNAL MODULE: external "@emotion/css"
+var css_ = __webpack_require__(42);
+var css_default = /*#__PURE__*/__webpack_require__.n(css_);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/toConsumableArray"
+var toConsumableArray_ = __webpack_require__(43);
+var toConsumableArray_default = /*#__PURE__*/__webpack_require__.n(toConsumableArray_);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/objectWithoutProperties"
+var objectWithoutProperties_ = __webpack_require__(17);
+var objectWithoutProperties_default = /*#__PURE__*/__webpack_require__.n(objectWithoutProperties_);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/classCallCheck"
+var classCallCheck_ = __webpack_require__(25);
+var classCallCheck_default = /*#__PURE__*/__webpack_require__.n(classCallCheck_);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/createClass"
+var createClass_ = __webpack_require__(26);
+var createClass_default = /*#__PURE__*/__webpack_require__.n(createClass_);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/possibleConstructorReturn"
+var possibleConstructorReturn_ = __webpack_require__(27);
+var possibleConstructorReturn_default = /*#__PURE__*/__webpack_require__.n(possibleConstructorReturn_);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/getPrototypeOf"
+var getPrototypeOf_ = __webpack_require__(28);
+var getPrototypeOf_default = /*#__PURE__*/__webpack_require__.n(getPrototypeOf_);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/assertThisInitialized"
+var assertThisInitialized_ = __webpack_require__(8);
+var assertThisInitialized_default = /*#__PURE__*/__webpack_require__.n(assertThisInitialized_);
+
+// EXTERNAL MODULE: external "@babel/runtime/helpers/inherits"
+var inherits_ = __webpack_require__(29);
+var inherits_default = /*#__PURE__*/__webpack_require__.n(inherits_);
+
+// EXTERNAL MODULE: external "downshift"
+var external_downshift_ = __webpack_require__(19);
+var external_downshift_default = /*#__PURE__*/__webpack_require__.n(external_downshift_);
+
+// EXTERNAL MODULE: external "@emotion/styled-base"
+var styled_base_ = __webpack_require__(15);
+var styled_base_default = /*#__PURE__*/__webpack_require__.n(styled_base_);
+
+// EXTERNAL MODULE: external "match-sorter"
+var external_match_sorter_ = __webpack_require__(44);
+var external_match_sorter_default = /*#__PURE__*/__webpack_require__.n(external_match_sorter_);
+
+// CONCATENATED MODULE: /Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/components/shared.js
+
+
+
+
+
+
+
+
+
+var issues = ["Environment & Natural Resource Management", "Human Rights", "Law & Constitution", "Labor", "Women Rights", "Children & Youth", "Research & Education", "Disability", "Poverty", "Economics", "Public Finance & Fiscal Policy", "Trade, Industry & Investment", "Security & Foreign Affairs ", "Natural Resources Management ", "Infrastructure Development", "Governance", "Culture & Society", "Population & Demographics", "Public Health"];
+var allItems = issues.map(function (s) {
+  return {
+    name: s,
+    id: s.toLowerCase()
+  };
+});
+
+var Item =
+/*#__PURE__*/
+styled_base_default()("li", {
+  target: "efj1520"
+})("position:relative;cursor:pointer;display:block;border:none;height:auto;text-align:left;border-top:none;line-height:1em;color:rgba(0,0,0,.87);font-size:1rem;text-transform:none;font-weight:400;box-shadow:none;padding:.8rem 1.1rem;white-space:normal;word-wrap:normal;", function (_ref) {
+  var isActive = _ref.isActive,
+      isSelected = _ref.isSelected;
+  var styles = [];
+
+  if (isActive) {
+    styles.push({
+      color: "rgba(0,0,0,.95)",
+      background: "rgba(0,0,0,.03)"
+    });
+  }
+
+  if (isSelected) {
+    styles.push({
+      color: "rgba(0,0,0,.95)",
+      fontWeight: "700"
+    });
+  }
+
+  return styles;
+},  true ? "" : undefined);
+
+var onAttention = "&:hover, &:focus";
+
+var Input =
+/*#__PURE__*/
+styled_base_default()("input", {
+  target: "efj1521"
+})(defineProperty_default()({
+  width: "100%",
+  // full width `,`icon width/2 `,`border
+  fontSize: 14,
+  wordWrap: "break-word",
+  lineHeight: "1em",
+  outline: 0,
+  whiteSpace: "normal",
+  minHeight: "2em",
+  background: "#fff",
+  display: "inline-block",
+  padding: "1em 2em 1em 1em",
+  color: "rgba(0,0,0,.87)",
+  boxShadow: "none",
+  border: "1px solid rgba(34,36,38,.15)",
+  borderRadius: ".30rem",
+  transition: "box-shadow .1s ease,width .1s ease"
+}, onAttention, {
+  borderColor: "#96c8da",
+  boxShadow: "0 2px 3px 0 rgba(34,36,38,.15)"
+}), function (_ref2) {
+  var isOpen = _ref2.isOpen;
+  return isOpen ? defineProperty_default()({
+    borderBottomLeftRadius: "0",
+    borderBottomRightRadius: "0"
+  }, onAttention, {
+    boxShadow: "none"
+  }) : null;
+},  true ? "" : undefined);
+
+var Label =
+/*#__PURE__*/
+styled_base_default()("label", {
+  target: "efj1522"
+})( true ? {
+  name: "5ilmf3",
+  styles: "font-weight:bold;display:block;margin-bottom:10px;"
+} : undefined);
+
+var BaseMenu =
+/*#__PURE__*/
+styled_base_default()("ul", {
+  target: "efj1523"
+})("padding:0;margin-top:0;position:absolute;background-color:white;width:100%;max-height:20rem;overflow-y:auto;overflow-x:hidden;outline:0;transition:opacity .1s ease;border-radius:0 0 .28571429rem .28571429rem;box-shadow:0 2px 3px 0 rgba(34,36,38,.15);border-color:#96c8da;border-top-width:0;border-right-width:1px;border-bottom-width:1px;border-left-width:1px;border-style:solid;", function (_ref4) {
+  var isOpen = _ref4.isOpen;
+  return {
+    border: isOpen ? null : "none"
+  };
+},  true ? "" : undefined);
+
+var Menu = external_react_default.a.forwardRef(function (props, ref) {
+  return Object(core_["jsx"])(BaseMenu, extends_default()({
+    ref: ref
+  }, props));
+});
+
+var ControllerButton =
+/*#__PURE__*/
+styled_base_default()("button", {
+  target: "efj1524"
+})( true ? {
+  name: "1jn69zd",
+  styles: "background-color:transparent;border:none;position:absolute;right:0;top:0;cursor:pointer;width:47px;display:flex;flex-direction:column;height:100%;justify-content:center;align-items:center;"
+} : undefined);
+
+function ArrowIcon(_ref5) {
+  var isOpen = _ref5.isOpen;
+  return Object(core_["jsx"])("svg", {
+    viewBox: "0 0 20 20",
+    preserveAspectRatio: "none",
+    width: 16,
+    fill: "transparent",
+    stroke: "#979797",
+    strokeWidth: "1.1px",
+    transform: isOpen ? "rotate(180)" : undefined
+  }, Object(core_["jsx"])("path", {
+    d: "M1,6 L10,15 L19,6"
+  }));
+}
+
+function XIcon() {
+  return Object(core_["jsx"])("svg", {
+    viewBox: "0 0 20 20",
+    preserveAspectRatio: "none",
+    width: 12,
+    fill: "transparent",
+    stroke: "#979797",
+    strokeWidth: "1.1px"
+  }, Object(core_["jsx"])("path", {
+    d: "M1,1 L19,19"
+  }), Object(core_["jsx"])("path", {
+    d: "M19,1 L1,19"
+  }));
+}
+
+function getItems(filter) {
+  return filter ? external_match_sorter_default()(allItems, filter, {
+    keys: ["name"]
+  }) : allItems;
+}
+
+function getStringItems(filter) {
+  return getItems(filter).map(function (_ref6) {
+    var name = _ref6.name;
+    return name;
+  });
+}
+
+function sleep(ms) {
+  return new Promise(function (resolve) {
+    setTimeout(resolve, ms);
+  });
+}
+
+function getItemsAsync(_x, _x2) {
+  return _getItemsAsync.apply(this, arguments);
+}
+
+function _getItemsAsync() {
+  _getItemsAsync = asyncToGenerator_default()(
+  /*#__PURE__*/
+  regenerator_default.a.mark(function _callee(filter, _ref7) {
+    var reject;
+    return regenerator_default.a.wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            reject = _ref7.reject;
+            _context.next = 3;
+            return sleep(Math.random() * 2000);
+
+          case 3:
+            if (!reject) {
+              _context.next = 5;
+              break;
+            }
+
+            throw new Error({
+              error: "request rejected"
+            });
+
+          case 5:
+            return _context.abrupt("return", getItems(filter));
+
+          case 6:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+  return _getItemsAsync.apply(this, arguments);
+}
+
+var itemToString = function itemToString(i) {
+  return i ? i.name : "";
+};
+
+
+// CONCATENATED MODULE: /Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/components/MultiSelect.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+// You'll find that downshift is a primitive component and
+// you'll be most successful wrapping it with another component
+// like the MultiSelect one you see here:
+//
+
+
+
+var MultiSelect_MultiSelect =
+/*#__PURE__*/
+function (_React$Component) {
+  inherits_default()(MultiSelect, _React$Component);
+
+  function MultiSelect() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    classCallCheck_default()(this, MultiSelect);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = possibleConstructorReturn_default()(this, (_getPrototypeOf2 = getPrototypeOf_default()(MultiSelect)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "stateReducer", function (state, changes) {
+      switch (changes.type) {
+        case external_downshift_default.a.stateChangeTypes.keyDownEnter:
+        case external_downshift_default.a.stateChangeTypes.clickItem:
+          return _objectSpread({}, changes, {
+            highlightedIndex: state.highlightedIndex,
+            isOpen: true,
+            inputValue: ""
+          });
+
+        default:
+          return changes;
+      }
+    });
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "handleSelection", function (selectedItem, downshift) {
+      var selectedItems = _this.props.selectedItems;
+
+      var callOnChange = function callOnChange() {
+        var _this$props = _this.props,
+            onSelect = _this$props.onSelect,
+            onChange = _this$props.onChange,
+            selectedItems = _this$props.selectedItems;
+
+        if (onSelect) {
+          onSelect(selectedItems, _this.getStateAndHelpers(downshift));
+        }
+
+        if (onChange) {
+          onChange(selectedItems, _this.getStateAndHelpers(downshift));
+        }
+      };
+
+      if (selectedItems.includes(selectedItem)) {
+        _this.removeItem(selectedItem, callOnChange);
+      } else {
+        _this.addSelectedItem(selectedItem, callOnChange);
+      }
+    });
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "removeItem", function (item, cb) {
+      var _this$props2 = _this.props,
+          selectedItems = _this$props2.selectedItems,
+          setSelectedItems = _this$props2.setSelectedItems;
+      setSelectedItems(selectedItems.filter(function (i) {
+        return i !== item;
+      }));
+      cb();
+    });
+
+    defineProperty_default()(assertThisInitialized_default()(_this), "getRemoveButtonProps", function () {
+      var _ref = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {},
+          _onClick = _ref.onClick,
+          item = _ref.item,
+          props = objectWithoutProperties_default()(_ref, ["onClick", "item"]);
+
+      return _objectSpread({
+        onClick: function onClick(e) {
+          // TODO: use something like downshift's composeEventHandlers utility instead
+          _onClick && _onClick(e);
+          e.stopPropagation();
+
+          _this.removeItem(item);
+        }
+      }, props);
+    });
+
+    return _this;
+  }
+
+  createClass_default()(MultiSelect, [{
+    key: "addSelectedItem",
+    value: function addSelectedItem(item, cb) {
+      var _this$props3 = this.props,
+          selectedItems = _this$props3.selectedItems,
+          setSelectedItems = _this$props3.setSelectedItems;
+      setSelectedItems([].concat(toConsumableArray_default()(selectedItems), [item]));
+      cb();
+    }
+  }, {
+    key: "getStateAndHelpers",
+    value: function getStateAndHelpers(downshift) {
+      var selectedItems = this.props.selectedItems;
+      var getRemoveButtonProps = this.getRemoveButtonProps,
+          removeItem = this.removeItem;
+      return _objectSpread({
+        getRemoveButtonProps: getRemoveButtonProps,
+        removeItem: removeItem,
+        selectedItems: selectedItems
+      }, downshift);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$props4 = this.props,
+          render = _this$props4.render,
+          _this$props4$children = _this$props4.children,
+          children = _this$props4$children === void 0 ? render : _this$props4$children,
+          props = objectWithoutProperties_default()(_this$props4, ["render", "children"]); // TODO: compose together props (rather than overwriting them) like downshift does
+
+
+      return Object(core_["jsx"])(external_downshift_default.a, extends_default()({}, props, {
+        stateReducer: this.stateReducer,
+        onChange: this.handleSelection,
+        selectedItem: null
+      }), function (downshift) {
+        return children(_this2.getStateAndHelpers(downshift));
+      });
+    }
+  }]);
+
+  return MultiSelect;
+}(external_react_default.a.Component);
+
+var MultiSelect_ref2 =  true ? {
+  name: "j7qwjs",
+  styles: "display:flex;flex-direction:column;"
+} : undefined;
+
+var MultiSelect_ref4 =  true ? {
+  name: "xxdqwu",
+  styles: "display:flex;flex-wrap:wrap;align-items:center;"
+} : undefined;
+
+var MultiSelect_ref5 =  true ? {
+  name: "1fxap94",
+  styles: "margin:0.5rem;margin-left:0;padding-left:8px;padding-right:8px;display:inline-block;word-wrap:none;background-color:#ccc;border-radius:2px;"
+} : undefined;
+
+var _ref6 =  true ? {
+  name: "xdkicx",
+  styles: "display:grid;grid-gap:6px;grid-auto-flow:column;align-items:center;"
+} : undefined;
+
+var MultiSelect_ref7 =  true ? {
+  name: "1mnx8h9",
+  styles: "cursor:pointer;line-height:0.8;border:none;background-color:transparent;padding:0;font-size:16px;"
+} : undefined;
+
+var _ref8 =  true ? {
+  name: "dn67gg",
+  styles: "border:none;margin:0;margin-left:6px;padding:0;flex:1;font-size:14px;"
+} : undefined;
+
+var MultiSelect_App =
+/*#__PURE__*/
+function (_React$Component2) {
+  inherits_default()(App, _React$Component2);
+
+  function App() {
+    var _getPrototypeOf3;
+
+    var _this3;
+
+    classCallCheck_default()(this, App);
+
+    for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+      args[_key2] = arguments[_key2];
+    }
+
+    _this3 = possibleConstructorReturn_default()(this, (_getPrototypeOf3 = getPrototypeOf_default()(App)).call.apply(_getPrototypeOf3, [this].concat(args)));
+
+    defineProperty_default()(assertThisInitialized_default()(_this3), "input", external_react_default.a.createRef());
+
+    defineProperty_default()(assertThisInitialized_default()(_this3), "itemToString", function (item) {
+      return item ? item.name : "";
+    });
+
+    defineProperty_default()(assertThisInitialized_default()(_this3), "handleChange", function (selectedItems) {
+      console.log({
+        selectedItems: selectedItems
+      });
+    });
+
+    return _this3;
+  }
+
+  createClass_default()(App, [{
+    key: "render",
+    value: function render() {
+      var _this4 = this;
+
+      var _this$props5 = this.props,
+          selectedItems = _this$props5.selectedItems,
+          setSelectedItems = _this$props5.setSelectedItems;
+      return Object(core_["jsx"])("div", {
+        css: MultiSelect_ref2
+      }, Object(core_["jsx"])("h3", null, "Interest"), Object(core_["jsx"])(MultiSelect_MultiSelect, {
+        onChange: this.handleChange,
+        itemToString: this.itemToString,
+        selectedItems: selectedItems,
+        setSelectedItems: setSelectedItems
+      }, function (_ref3) {
+        var getInputProps = _ref3.getInputProps,
+            getToggleButtonProps = _ref3.getToggleButtonProps,
+            getMenuProps = _ref3.getMenuProps,
+            getRemoveButtonProps = _ref3.getRemoveButtonProps,
+            removeItem = _ref3.removeItem,
+            isOpen = _ref3.isOpen,
+            inputValue = _ref3.inputValue,
+            selectedItems = _ref3.selectedItems,
+            getItemProps = _ref3.getItemProps,
+            highlightedIndex = _ref3.highlightedIndex,
+            toggleMenu = _ref3.toggleMenu;
+        return Object(core_["jsx"])("div", {
+          className: "multiselect",
+          style: {
+            width: "calc(100% - 2rem)",
+            position: "relative"
+          }
+        }, Object(core_["jsx"])("div", {
+          css:
+          /*#__PURE__*/
+          css_default()({
+            cursor: "pointer",
+            position: "relative",
+            borderRadius: "none",
+            borderTopRadius: 0,
+            borderBottomRightRadius: isOpen ? 0 : 0,
+            borderBottomLeftRadius: isOpen ? 0 : 0,
+            boxShadow: "0 2px 3px 0 rgba(34,36,38,.15)",
+            borderColor: "black",
+            borderTopWidth: 1,
+            borderRightWidth: 1,
+            borderBottomWidth: 1,
+            borderLeftWidth: 1,
+            borderStyle: "solid",
+            padding: "0.5rem 1rem"
+          },  true ? "" : undefined),
+          onClick: function onClick() {
+            toggleMenu();
+            !isOpen && _this4.input.current.focus();
+          }
+        }, Object(core_["jsx"])("div", {
+          css: MultiSelect_ref4
+        }, selectedItems.length > 0 ? selectedItems.map(function (item) {
+          return Object(core_["jsx"])("div", {
+            key: item.id,
+            css: MultiSelect_ref5
+          }, Object(core_["jsx"])("div", {
+            css: _ref6
+          }, Object(core_["jsx"])("span", null, item.name), Object(core_["jsx"])("button", extends_default()({}, getRemoveButtonProps({
+            item: item
+          }), {
+            css: MultiSelect_ref7
+          }), "\uD835\uDE05")));
+        }) : "Select interests", Object(core_["jsx"])("input", extends_default()({
+          css: _ref8
+        }, getInputProps({
+          ref: _this4.input,
+          onKeyDown: function onKeyDown(event) {
+            if (event.key === "Backspace" && !inputValue) {
+              removeItem(selectedItems[selectedItems.length - 1]);
+            }
+          }
+        })))), Object(core_["jsx"])(ControllerButton, getToggleButtonProps({
+          // prevents the menu from immediately toggling
+          // closed (due to our custom click handler above).
+          onClick: function onClick(event) {
+            event.stopPropagation();
+          }
+        }), Object(core_["jsx"])(ArrowIcon, {
+          isOpen: isOpen
+        }))), Object(core_["jsx"])(Menu, getMenuProps({
+          isOpen: isOpen
+        }), isOpen ? getItems(inputValue).map(function (item, index) {
+          return Object(core_["jsx"])(Item, extends_default()({
+            key: item.id
+          }, getItemProps({
+            item: item,
+            index: index,
+            isActive: highlightedIndex === index,
+            isSelected: selectedItems.includes(item)
+          })), item.name);
+        }) : null));
+      }));
+    }
+  }]);
+
+  return App;
+}(external_react_default.a.Component);
+
+/* harmony default export */ var components_MultiSelect = (MultiSelect_App);
+// CONCATENATED MODULE: /Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/rute.js
+
+
+
+
+
+
+
+function rute_ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function rute_objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { rute_ownKeys(source, true).forEach(function (key) { defineProperty_default()(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { rute_ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+
+
+
+
+
+
+var signupSchema = external_yup_["object"]().shape({
+  email: external_yup_["string"]().email("Email does not seem valid.").required("We need your email address."),
+  name: external_yup_["string"]().min(2).required("We'd love to know your name."),
+  birthyear: external_yup_["number"]().min(1900, "Not *that* old 🤔").max(2019, "🤔").required("We'd love to know your age"),
+  organization: external_yup_["string"]().required("What organization are you in? If not applicable, type 'Personal'")
+});
+var initialValues = {
+  email: "",
+  name: "",
+  birthyear: "",
+  organization: ""
+};
+
+var encode = function encode(data) {
+  return Object.keys(data).map(function (key) {
+    return encodeURIComponent(key) + "=" + encodeURIComponent(data[key]);
+  }).join("&");
+};
+
+var rute_ErrorComponent = function ErrorComponent(props) {
+  return Object(core_["jsx"])("span", extends_default()({}, props, {
+    style: {
+      color: "#e55"
+    }
+  }));
+};
+
+/* harmony default export */ var rute = __webpack_exports__["default"] = (function () {
+  var _useSiteData = Object(external_react_static_["useSiteData"])(),
+      headlineRute = _useSiteData.headlineRute,
+      subheadlineRute = _useSiteData.subheadlineRute,
+      cta = _useSiteData.cta;
+
+  var _useState = Object(external_react_["useState"])(false),
+      _useState2 = slicedToArray_default()(_useState, 2),
+      hasSubmitted = _useState2[0],
+      setHasSubmitted = _useState2[1];
+
+  var _useState3 = Object(external_react_["useState"])(""),
+      _useState4 = slicedToArray_default()(_useState3, 2),
+      submittedName = _useState4[0],
+      setSubmittedName = _useState4[1];
+
+  var _useState5 = Object(external_react_["useState"])([]),
+      _useState6 = slicedToArray_default()(_useState5, 2),
+      selectedItems = _useState6[0],
+      setSelectedItems = _useState6[1];
+
+  var handleSubmit = function handleSubmit(values) {
+    var body = rute_objectSpread({
+      "form-name": "rute"
+    }, values);
+
+    console.log(body);
+    var encoded = encode(body);
+    external_isomorphic_unfetch_default()("/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: encoded
+    }).then(function () {
+      setSubmittedName(values.name);
+      setHasSubmitted(true);
+    })["catch"](function (error) {
+      return alert(error);
+    });
+  };
+
+  return Object(core_["jsx"])(external_react_default.a.Fragment, null, Object(core_["jsx"])("img", {
+    src: "/logo.jpg",
+    className: "logo",
+    alt: "Think Policy logo"
+  }), Object(core_["jsx"])("h1", null, headlineRute), Object(core_["jsx"])("p", null, subheadlineRute), hasSubmitted ? Object(core_["jsx"])("h2", null, "Thanks for submitting, ", submittedName, "! We will reach out to you.") : Object(core_["jsx"])(external_formik_["Formik"], {
+    initialValues: initialValues,
+    validationSchema: signupSchema,
+    onSubmit:
+    /*#__PURE__*/
+    function () {
+      var _ref = asyncToGenerator_default()(
+      /*#__PURE__*/
+      regenerator_default.a.mark(function _callee(values, actions) {
+        return regenerator_default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                // alert(JSON.stringify(values));
+                console.log(selectedItems);
+
+                if (!(selectedItems.length > 0)) {
+                  _context.next = 6;
+                  break;
+                }
+
+                _context.next = 4;
+                return handleSubmit(rute_objectSpread({}, values, {
+                  interests: selectedItems.map(function (item) {
+                    return item.name;
+                  }).join(",")
+                }));
+
+              case 4:
+                _context.next = 7;
+                break;
+
+              case 6:
+                alert("Please fill out your interests");
+
+              case 7:
+                actions.setSubmitting(false);
+
+              case 8:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      return function (_x, _x2) {
+        return _ref.apply(this, arguments);
+      };
+    }(),
+    render: function render(formikProps) {
+      return Object(core_["jsx"])("form", {
+        name: "rute" // netlify-honeypot="contact_me_by_fax_only"
+        ,
+        "data-netlify": "true",
+        onReset: formikProps.handleReset,
+        onSubmit: formikProps.handleSubmit
+      }, Object(core_["jsx"])(external_formik_["Field"], {
+        name: "email",
+        render: function render(_ref2) {
+          var field = _ref2.field,
+              _ref2$form = _ref2.form,
+              touched = _ref2$form.touched,
+              errors = _ref2$form.errors;
+          return Object(core_["jsx"])("label", null, Object(core_["jsx"])("h3", {
+            style: {
+              marginBottom: 0
+            }
+          }, "Email: "), Object(core_["jsx"])("input", extends_default()({
+            className: touched[field.name] && errors[field.name] && "error",
+            type: "text"
+          }, field, {
+            placeholder: "saya@perusahaan.com"
+          })));
+        }
+      }), Object(core_["jsx"])(external_formik_["ErrorMessage"], {
+        name: "email",
+        component: rute_ErrorComponent
+      }), Object(core_["jsx"])(external_formik_["Field"], {
+        name: "name",
+        render: function render(_ref3) {
+          var field = _ref3.field,
+              _ref3$form = _ref3.form,
+              touched = _ref3$form.touched,
+              errors = _ref3$form.errors;
+          return Object(core_["jsx"])("label", null, Object(core_["jsx"])("h3", {
+            style: {
+              marginBottom: 0
+            }
+          }, "Nama: "), Object(core_["jsx"])("input", extends_default()({
+            className: touched[field.name] && errors[field.name] && "error",
+            type: "text"
+          }, field, {
+            placeholder: "Odi"
+          })));
+        }
+      }), " ", Object(core_["jsx"])("br", null), Object(core_["jsx"])(external_formik_["ErrorMessage"], {
+        name: "name",
+        component: rute_ErrorComponent
+      }), Object(core_["jsx"])(external_formik_["Field"], {
+        name: "birthyear",
+        render: function render(_ref4) {
+          var field = _ref4.field,
+              _ref4$form = _ref4.form,
+              touched = _ref4$form.touched,
+              errors = _ref4$form.errors;
+          return Object(core_["jsx"])("label", null, Object(core_["jsx"])("h3", {
+            style: {
+              marginBottom: 0
+            }
+          }, "Tahun Kelahiran: "), Object(core_["jsx"])("input", extends_default()({
+            className: touched[field.name] && errors[field.name] && "error",
+            type: "text"
+          }, field, {
+            placeholder: "1990"
+          })));
+        }
+      }), " ", Object(core_["jsx"])("br", null), Object(core_["jsx"])(external_formik_["ErrorMessage"], {
+        name: "birthyear",
+        component: rute_ErrorComponent
+      }), Object(core_["jsx"])(external_formik_["Field"], {
+        name: "organization",
+        render: function render(_ref5) {
+          var field = _ref5.field,
+              _ref5$form = _ref5.form,
+              touched = _ref5$form.touched,
+              errors = _ref5$form.errors;
+          return Object(core_["jsx"])("label", null, Object(core_["jsx"])("h3", {
+            style: {
+              marginBottom: 0
+            }
+          }, "Organisasi: "), Object(core_["jsx"])("input", extends_default()({
+            className: touched[field.name] && errors[field.name] && "error",
+            type: "text"
+          }, field, {
+            placeholder: "Badan Kebijakan Publik"
+          })));
+        }
+      }), " ", Object(core_["jsx"])("br", null), Object(core_["jsx"])(external_formik_["ErrorMessage"], {
+        name: "organization",
+        component: rute_ErrorComponent
+      }), " ", Object(core_["jsx"])("input", {
+        className: "hidden",
+        name: "interests",
+        tabIndex: "-1",
+        autoComplete: "off"
+      }), Object(core_["jsx"])(components_MultiSelect, {
+        selectedItems: selectedItems,
+        setSelectedItems: setSelectedItems
+      }), " ", Object(core_["jsx"])("br", null), Object(core_["jsx"])("button", {
+        type: "submit",
+        disabled: formikProps.isSubmitting && selectedItems.length === 0
+      }, cta));
+    }
+  }));
+});
+
+/***/ }),
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1153,11 +2392,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _react = _interopRequireDefault(__webpack_require__(0));
+var _react = _interopRequireDefault(__webpack_require__(1));
 
-var _reactStatic = __webpack_require__(1);
+var _reactStatic = __webpack_require__(6);
 
-var _router = __webpack_require__(4);
+var _router = __webpack_require__(10);
 
 function _interopRequireDefault(obj) {
   return obj && obj.__esModule ? obj : {
@@ -1245,7 +2484,7 @@ var _default = function _default(_ref) {
 
 
         return typeof document === 'undefined' ? _react["default"].createElement(_router.ServerLocation, {
-          url: (0, _reactStatic.makePathAbsolute)(staticInfo.path)
+          url: (0, _reactStatic.makePathAbsolute)("".concat(basepath, "/").concat(staticInfo.path))
         }, renderedChildren) : renderedChildren;
       };
     },
@@ -1268,84 +2507,84 @@ var _default = function _default(_ref) {
 exports["default"] = _default;
 
 /***/ }),
-/* 20 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-hot-loader");
 
 /***/ }),
-/* 21 */
+/* 40 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/classCallCheck");
+module.exports = require("@rehooks/window-size");
 
 /***/ }),
-/* 22 */
+/* 41 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/createClass");
+module.exports = require("react-particles-js");
 
 /***/ }),
-/* 23 */
+/* 42 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/possibleConstructorReturn");
+module.exports = require("@emotion/css");
 
 /***/ }),
-/* 24 */
+/* 43 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/getPrototypeOf");
+module.exports = require("@babel/runtime/helpers/toConsumableArray");
 
 /***/ }),
-/* 25 */
+/* 44 */
 /***/ (function(module, exports) {
 
-module.exports = require("@babel/runtime/helpers/inherits");
+module.exports = require("match-sorter");
 
 /***/ }),
-/* 26 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(27);
-__webpack_require__(28);
-module.exports = __webpack_require__(34);
+__webpack_require__(46);
+__webpack_require__(47);
+module.exports = __webpack_require__(53);
 
 
 /***/ }),
-/* 27 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 /* eslint-disable import/no-dynamic-require */
 
-var plugins = __webpack_require__(12)["default"];
+var plugins = __webpack_require__(30)["default"];
 
-var _require = __webpack_require__(13),
+var _require = __webpack_require__(31),
     registerPlugins = _require.registerPlugins;
 
 registerPlugins(plugins);
 
 if (typeof document !== 'undefined' && module && module.hot) {
   module.hot.accept("/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/artifacts/react-static-browser-plugins.js", function () {
-    registerPlugins(__webpack_require__(12)["default"]);
+    registerPlugins(__webpack_require__(30)["default"]);
   });
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(8)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(21)(module)))
 
 /***/ }),
-/* 28 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(module) {
 /* eslint-disable import/no-dynamic-require */
 
-var _require = __webpack_require__(13),
+var _require = __webpack_require__(31),
     registerTemplates = _require.registerTemplates;
 
-var _require2 = __webpack_require__(14),
+var _require2 = __webpack_require__(32),
     templates = _require2["default"],
     notFoundTemplate = _require2.notFoundTemplate;
 
@@ -1353,17 +2592,17 @@ registerTemplates(templates, notFoundTemplate);
 
 if (typeof document !== 'undefined' && module && module.hot) {
   module.hot.accept("/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/artifacts/react-static-templates.js", function () {
-    var _require3 = __webpack_require__(14),
+    var _require3 = __webpack_require__(32),
         templates = _require3["default"],
         notFoundTemplate = _require3.notFoundTemplate;
 
     registerTemplates(templates, notFoundTemplate);
   });
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(8)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(21)(module)))
 
 /***/ }),
-/* 29 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1390,7 +2629,7 @@ var _extends = Object.assign || function (target) {
 
 exports["default"] = requireUniversalModule;
 
-var _utils = __webpack_require__(10);
+var _utils = __webpack_require__(23);
 
 var CHUNK_NAMES = exports.CHUNK_NAMES = new Set();
 var MODULE_IDS = exports.MODULE_IDS = new Set();
@@ -1574,14 +2813,14 @@ var getConfig = function getConfig(isDynamic, universalConfig, options, props) {
 };
 
 /***/ }),
-/* 30 */
+/* 49 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	".": 2,
-	"./": 2,
-	"./index": 2,
-	"./index.js": 2
+	".": 16,
+	"./": 16,
+	"./index": 16,
+	"./index.js": 16
 };
 
 
@@ -1602,16 +2841,16 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 30;
+webpackContext.id = 49;
 
 /***/ }),
-/* 31 */
+/* 50 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _typeof = __webpack_require__(9);
+var _typeof = __webpack_require__(22);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
@@ -1635,11 +2874,11 @@ var _createClass = function () {
   };
 }();
 
-var _react = __webpack_require__(0);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _propTypes = __webpack_require__(15);
+var _propTypes = __webpack_require__(33);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
@@ -1714,13 +2953,13 @@ ReportChunks.childContextTypes = {
 exports["default"] = ReportChunks;
 
 /***/ }),
-/* 32 */
+/* 51 */
 /***/ (function(module, exports) {
 
 module.exports = require("vm");
 
 /***/ }),
-/* 33 */
+/* 52 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1731,11 +2970,11 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.__handleAfter = exports.__update = undefined;
 
-var _hoistNonReactStatics = __webpack_require__(16);
+var _hoistNonReactStatics = __webpack_require__(34);
 
 var _hoistNonReactStatics2 = _interopRequireDefault(_hoistNonReactStatics);
 
-var _index = __webpack_require__(3);
+var _index = __webpack_require__(14);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -1787,28 +3026,28 @@ var __handleAfter = exports.__handleAfter = function __handleAfter(props, state,
 };
 
 /***/ }),
-/* 34 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _interopRequireWildcard = __webpack_require__(35);
+var _interopRequireWildcard = __webpack_require__(54);
 
-var _interopRequireDefault = __webpack_require__(36);
+var _interopRequireDefault = __webpack_require__(55);
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
 
-var _extends2 = _interopRequireDefault(__webpack_require__(37));
+var _extends2 = _interopRequireDefault(__webpack_require__(2));
 
-var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(38));
+var _objectWithoutProperties2 = _interopRequireDefault(__webpack_require__(17));
 
-var React = _interopRequireWildcard(__webpack_require__(0));
+var React = _interopRequireWildcard(__webpack_require__(1));
 
-var _useStaticInfo = __webpack_require__(39);
+var _useStaticInfo = __webpack_require__(56);
 /* eslint-disable import/no-dynamic-require */
 
 
@@ -1829,7 +3068,7 @@ function Suspense(_ref) {
 React.Suspense = Suspense;
 React["default"].Suspense = Suspense;
 
-var App = __webpack_require__(40)["default"];
+var App = __webpack_require__(57)["default"];
 
 var _default = function _default(staticInfo) {
   return function (props) {
@@ -1842,77 +3081,72 @@ var _default = function _default(staticInfo) {
 exports["default"] = _default;
 
 /***/ }),
-/* 35 */
+/* 54 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireWildcard");
 
 /***/ }),
-/* 36 */
+/* 55 */
 /***/ (function(module, exports) {
 
 module.exports = require("@babel/runtime/helpers/interopRequireDefault");
 
 /***/ }),
-/* 37 */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/extends");
-
-/***/ }),
-/* 38 */
-/***/ (function(module, exports) {
-
-module.exports = require("@babel/runtime/helpers/objectWithoutProperties");
-
-/***/ }),
-/* 39 */
+/* 56 */
 /***/ (function(module, exports) {
 
 module.exports = require("/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/node_modules/react-static/lib/browser/hooks/useStaticInfo");
 
 /***/ }),
-/* 40 */
+/* 57 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20);
-/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7);
+/* WEBPACK VAR INJECTION */(function(module) {/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var _emotion_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_emotion_core__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(39);
+/* harmony import */ var react_hot_loader__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_hot_loader__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(20);
+
 
 
  // Your top level component
 
- // Export your top level component as JSX (for static rendering)
+ // import ReactGA from "react-ga";
+// Export your top level component as JSX (for static rendering)
 
-/* harmony default export */ __webpack_exports__["default"] = (_App__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"]); // Render your app
+/* harmony default export */ __webpack_exports__["default"] = (_App__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"]); // Render your app
 
 if (typeof document !== "undefined") {
   var target = document.getElementById("root");
-  var renderMethod = target.hasChildNodes() ? react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.hydrate : react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render;
+  var renderMethod = target.hasChildNodes() ? react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.hydrate : react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render;
 
   var render = function render(Comp) {
-    renderMethod(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_hot_loader__WEBPACK_IMPORTED_MODULE_2__["AppContainer"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Comp, null)), target);
+    renderMethod(Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react__WEBPACK_IMPORTED_MODULE_1___default.a.Suspense, {
+      fallback: Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])("em", null, "Hot Loader Fallback")
+    }, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(react_hot_loader__WEBPACK_IMPORTED_MODULE_3__["AppContainer"], null, Object(_emotion_core__WEBPACK_IMPORTED_MODULE_0__["jsx"])(Comp, null))), target);
   }; // Render!
 
 
-  render(_App__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"]); // Hot Module Replacement
+  render(_App__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"]); // Hot Module Replacement
 
   if (module && module.hot) {
     module.hot.accept("./App", function () {
-      render(_App__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"]);
+      render(_App__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"]);
     });
-  }
+  } // ReactGA.initialize();
+
 }
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(41)(module)))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(58)(module)))
 
 /***/ }),
-/* 41 */
+/* 58 */
 /***/ (function(module, exports) {
 
 module.exports = function (originalModule) {
@@ -1942,17 +3176,23 @@ module.exports = function (originalModule) {
 };
 
 /***/ }),
-/* 42 */
+/* 59 */
+/***/ (function(module, exports) {
+
+module.exports = require("normalize.css");
+
+/***/ }),
+/* 60 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(43)(false);
+exports = module.exports = __webpack_require__(61)(false);
 // Module
-exports.push([module.i, "* {\n  scroll-behavior: smooth;\n}\n\nbody {\n  font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\",\n    Helvetica, Arial, \"Lucida Grande\", sans-serif;\n  font-weight: 300;\n  font-size: 16px;\n  margin: 0;\n  padding: 0;\n}\n\na {\n  text-decoration: none;\n  color: #108db8;\n  font-weight: bold;\n}\n\nimg {\n  max-width: 100%;\n}\n\nnav {\n  width: 100%;\n  background: #108db8;\n}\n\nnav a {\n  color: white;\n  padding: 1rem;\n  display: inline-block;\n}\n\n.content {\n  padding: 1rem;\n}\n\nimg.logo {\n  position: fixed;\n  top: 4rem;\n  left: 4rem;\n  width: 2rem;\n  height: auto;\n}\n", ""]);
+exports.push([module.i, "* {\n  scroll-behavior: smooth;\n  box-sizing: border-box;\n}\n\nbody {\n  font-family: \"HelveticaNeue-Light\", \"Helvetica Neue Light\", \"Helvetica Neue\",\n    Helvetica, Arial, \"Lucida Grande\", sans-serif;\n  font-weight: 300;\n  font-size: 16px;\n  margin: 0;\n  padding: 0;\n}\n\np {\n  margin-top: 2rem;\n}\n\ninput {\n  margin-bottom: 1rem;\n}\n\na {\n  text-decoration: none;\n  color: #108db8;\n  font-weight: bold;\n}\n\nimg {\n  max-width: 100%;\n}\n\nnav {\n  width: 100%;\n  background: #108db8;\n}\n\nnav a {\n  color: white;\n  padding: 1rem;\n  display: inline-block;\n}\n\n.content {\n  padding: 2rem;\n  max-width: 36rem;\n  padding-bottom: 8rem;\n}\n\nimg.logo {\n  width: 4rem;\n  height: auto;\n}\n\ninput {\n  margin-top: 0.5rem;\n  padding: 0.5rem 1rem;\n  border: solid 1px #000;\n  width: calc(100% - 2rem);\n  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.25);\n}\n\ninput.error {\n  border: solid 1px #e55;\n  box-shadow: 0 4px 4px 0 rgba(240, 80, 80, 0.25);\n}\n\nbutton {\n  padding: 0.5rem 1rem;\n  background-color: black;\n  color: white;\n  border: solid 1px #000;\n  width: calc(100% - 2rem);\n  max-width: 8rem;\n  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.25);\n  transition: all ease-in-out 0.075s;\n}\n\nbutton:hover {\n  opacity: 0.85;\n  transform: translateY(-2px);\n  box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.25);\n}\n\n.multiselect input,\n.multiselect button {\n  box-shadow: none;\n}\n\n.hidden {\n  display: none;\n}\n", ""]);
 
 
 
 /***/ }),
-/* 43 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

@@ -4,7 +4,7 @@
   "scripts": {
     "start": "react-static start",
     "stage": "react-static build --staging",
-    "build": "react-static build",
+    "build": "react-static build && netlify-lambda build src/lambda",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000"
   },
@@ -21,6 +21,7 @@
     "google-spreadsheet": "^2.0.7",
     "isomorphic-unfetch": "^3.0.0",
     "match-sorter": "^4.0.1",
+    "netlify-lambda": "^1.6.3",
     "normalize.css": "^8.0.1",
     "react": "^16.8.2",
     "react-dom": "^16.8.2",

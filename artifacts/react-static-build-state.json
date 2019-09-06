@@ -1,5 +1,4 @@
 {
-  "entry": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/index.js",
   "prefetchRate": 5,
   "maxThreads": null,
   "disableRoutePrefixing": false,
@@ -13,6 +12,7 @@
   "disableRuntime": false,
   "preloadPollInterval": 300,
   "productionSourceMaps": false,
+  "entry": "index.js",
   "plugins": [
     [
       "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/node_modules/react-static-plugin-source-filesystem/node.api.js",
@@ -39,17 +39,17 @@
     "HTML_TEMPLATE": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/dist/index.html",
     "STATIC_DATA": "/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/dist/staticData"
   },
-  "devServer": {
-    "host": "http://localhost",
-    "port": 3000
-  },
-  "babelExcludes": [],
-  "siteRoot": "",
+  "siteRoot": "/",
   "basePath": "",
   "publicPath": "/",
   "assetsPath": "",
   "extractCssChunks": false,
   "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
   "terser": {
     "terserOptions": {
       "mangle": {},
