@@ -3,6 +3,7 @@ import { useSiteData } from "react-static";
 import { Formik, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import fetch from "isomorphic-unfetch";
+import { Link } from "@reach/router";
 
 const signupSchema = Yup.object().shape({
   email: Yup.string()
@@ -63,6 +64,9 @@ export default () => {
 
       <h1>{headline}</h1>
       <p>{subheadline}</p>
+
+      <Link to="/rute">{">> "}Daftar Ruang Tengah</Link>
+
       {hasSubmitted ? (
         <h2>
           Thanks for submitting, {submittedName}! We will reach out to you.
@@ -168,7 +172,7 @@ export default () => {
                 )}
               />
               <ErrorMessage name="organization" component={ErrorComponent} />
-              <br/>
+              <br />
 
               <button type="submit" disabled={formikProps.isSubmitting}>
                 {cta}

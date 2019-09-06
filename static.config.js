@@ -14,6 +14,7 @@ const serviceAccount = {
 export default {
   getSiteData: async () => {
     const sheetData = await getSiteDataFromSheet(googleSheetID, serviceAccount);
+    console.log(sheetData);
     return {
       ...sheetData
     };

@@ -3,10 +3,10 @@
   
 // Template Map
 export default {
-  '../src/pages/404.js': require('../src/pages/404.js').default,
-'../src/pages/index.js': require('../src/pages/index.js').default,
-'../src/pages/rute.js': require('../src/pages/rute.js').default
+  '/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/404.js': require('/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/404.js').default,
+'/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/index.js': require('/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/index.js').default,
+'/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/rute.js': require('/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/rute.js').default
 }
 
-export const notFoundTemplate = '../src/pages/404.js'
+export const notFoundTemplate = '/Users/odi/WORK/THINKPOLICY/thinkpolicy.id/src/pages/404.js'
 

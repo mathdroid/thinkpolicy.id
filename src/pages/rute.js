@@ -48,6 +48,7 @@ export default () => {
       "form-name": "rute",
       ...values
     };
+    console.log(body);
     const encoded = encode(body);
     fetch(`/`, {
       method: "POST",
@@ -78,13 +79,15 @@ export default () => {
           validationSchema={signupSchema}
           onSubmit={async (values, actions) => {
             // alert(JSON.stringify(values));
+            console.log(selectedItems);
             if (selectedItems.length > 0) {
               await handleSubmit({
                 ...values,
-                interests: selectedItems.join(",")
+                interests: selectedItems.map(item => item.name).join(",")
               });
+            } else {
+              alert("Please fill out your interests");
             }
-            alert("Please fill out your interests");
 
             actions.setSubmitting(false);
           }}
