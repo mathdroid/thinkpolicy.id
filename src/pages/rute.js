@@ -44,26 +44,21 @@ export default () => {
   const [selectedItems, setSelectedItems] = useState([]);
 
   const handleSubmit = values => {
-    if (selectedItems.length > 0) {
-      const body = {
-        "form-name": "rute",
-        ...values,
-        interests: selectedItems.join(",")
-      };
-      const encoded = encode(body);
-      fetch(`/`, {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encoded
+    const body = {
+      "form-name": "rute",
+      ...values
+    };
+    const encoded = encode(body);
+    fetch(`/`, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encoded
+    })
+      .then(() => {
+        setSubmittedName(values.name);
+        setHasSubmitted(true);
       })
-        .then(() => {
-          setSubmittedName(values.name);
-          setHasSubmitted(true);
-        })
-        .catch(error => alert(error));
-    } else {
-      alert("Please fill out your interests");
-    }
+      .catch(error => alert(error));
   };
 
   return (
@@ -83,7 +78,14 @@ export default () => {
           validationSchema={signupSchema}
           onSubmit={async (values, actions) => {
             // alert(JSON.stringify(values));
-            await handleSubmit(values);
+            if (selectedItems.length > 0) {
+              await handleSubmit({
+                ...values,
+                interests: selectedItems.join(",")
+              });
+            }
+            alert("Please fill out your interests");
+
             actions.setSubmitting(false);
           }}
           render={formikProps => (
@@ -168,6 +170,12 @@ export default () => {
                 name="organization"
                 component={ErrorComponent}
               />{" "}
+              <input
+                className="hidden"
+                name="interests"
+                tabIndex="-1"
+                autoComplete="off"
+              />
               <MultiSelect
                 selectedItems={selectedItems}
                 setSelectedItems={setSelectedItems}
