@@ -5762,10 +5762,10 @@ match-sorter@^3.1.1:
   dependencies:
     remove-accents "0.4.2"
 
-match-sorter@^4.0.1:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/match-sorter/-/match-sorter-4.0.1.tgz#94197906dec723c8023517f99189e5fa662b1036"
-  integrity sha512-DdlYxhN20iVJI7jEK7wkZY+EPtaj2G4tT59lDSxG3F6lD9gGtQKaLNCP/0HF4q2n3bT/dRO5L7j3PL8TK5wRdA==
+match-sorter@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/match-sorter/-/match-sorter-4.0.2.tgz#1b451e8bc7112e5a41ebe3a977b7e19f167c3215"
+  integrity sha512-5EcCLEmPgfvq2hg1DAgAG7zqqS9bnZmRXzLR3md0xRi3Q1oGnnze6HuY+4bDRtm+X2lTsVZL8oG9FOkALFT4vw==
   dependencies:
     "@babel/runtime" "^7.5.5"
     remove-accents "0.4.2"
