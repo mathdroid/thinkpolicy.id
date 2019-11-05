@@ -4,7 +4,13 @@
 
 The website for https://thinkpolicy.id
 
+## Stack
+
+- React Static
+
 ## License
+
+[The Hippocratic License](https://firstdonoharm.dev)
 
 Copyright 2019 [mathdroid](https://github.com/mathdroid)
 
