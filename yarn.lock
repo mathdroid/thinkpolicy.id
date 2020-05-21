@@ -7562,10 +7562,10 @@ react-static-plugin-emotion@^7.2.2:
   dependencies:
     emotion-server "^10.0.14"
 
-react-static-plugin-reach-router@^7.0.0:
-  version "7.2.2"
-  resolved "https://registry.yarnpkg.com/react-static-plugin-reach-router/-/react-static-plugin-reach-router-7.2.2.tgz#b474329956fcd795a73945e57674d1eff25259ee"
-  integrity sha512-+4D+kRY20drQePO3PBLOm1HHPX6ASr2Wtvf4HhaG0Nl4jc7plakR25hnzFeSKm4+bGmQ1CgidTqp1NR3iPpJnQ==
+react-static-plugin-reach-router@^7.3.0:
+  version "7.3.0"
+  resolved "https://registry.yarnpkg.com/react-static-plugin-reach-router/-/react-static-plugin-reach-router-7.3.0.tgz#ecd07501d86811684e244ecf94136c49e97eacf8"
+  integrity sha512-ULxKNdbOsFZ6CNyw/DNn4Kf6D1afFBBWARKiHC9DS8dpdUEUy53lMJUgTsrG+gIjKM6YNw3/AHlVTTnj3YNIZw==
 
 react-static-plugin-sitemap@^7.0.0:
   version "7.2.2"
