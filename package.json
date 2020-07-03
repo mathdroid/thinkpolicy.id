@@ -26,7 +26,7 @@
     "react": "^16.8.2",
     "react-dom": "^16.8.2",
     "react-particles-js": "^2.6.0",
-    "react-static": "^7.0.0",
+    "react-static": "^7.4.2",
     "react-static-plugin-emotion": "^7.2.2",
     "react-static-plugin-reach-router": "^7.0.0",
     "react-static-plugin-sitemap": "^7.0.0",
