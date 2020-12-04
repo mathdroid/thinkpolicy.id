@@ -31,7 +31,7 @@
     "react-static-plugin-reach-router": "^7.0.0",
     "react-static-plugin-sitemap": "^7.0.0",
     "react-static-plugin-source-filesystem": "^7.1.0",
-    "yup": "^0.27.0"
+    "yup": "^0.32.1"
   },
   "devDependencies": {
     "babel-eslint": "9.x",
