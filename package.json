@@ -14,7 +14,7 @@
     "@emotion/styled": "^10.0.17",
     "@reach/router": "^1.2.1",
     "@rehooks/window-size": "^1.0.2",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "dotenv": "^8.0.0",
     "downshift": "^3.2.14",
     "formik": "^1.5.7",
