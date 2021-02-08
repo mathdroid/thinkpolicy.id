@@ -7555,10 +7555,10 @@ react-side-effect@^1.1.0:
   dependencies:
     shallowequal "^1.0.1"
 
-react-static-plugin-emotion@^7.2.2:
-  version "7.2.2"
-  resolved "https://registry.yarnpkg.com/react-static-plugin-emotion/-/react-static-plugin-emotion-7.2.2.tgz#104d7cf1c03abb3cfcafbb55039293c8a6c44ba4"
-  integrity sha512-BshmDfSQPW4LoO6TmZOANw0GZT4aqZra0DNiE0GHxq8b2/9JnH97129+4vWB+3rH2K2PYi9ECMuSbkTVsL4e0w==
+react-static-plugin-emotion@^7.5.0:
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/react-static-plugin-emotion/-/react-static-plugin-emotion-7.5.0.tgz#df59160f8d16594ec05942bb4b1373eb221a1dd8"
+  integrity sha512-cTeT+RnYUFGQhoEY+cDv+ZhHkf9lW9sCUT7Me4ltRjwcBbVB8f7qrxjB6tFttPf8JgzZgLOSDSgkvhJPm8qeRQ==
   dependencies:
     emotion-server "^10.0.14"
 
