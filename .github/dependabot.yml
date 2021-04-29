@@ -1,0 +1,57 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "22:00"
+  open-pull-requests-limit: 99
+  ignore:
+  - dependency-name: netlify-lambda
+    versions:
+    - 2.0.3
+    - 2.0.4
+  - dependency-name: eslint-plugin-react
+    versions:
+    - 7.22.0
+    - 7.23.0
+    - 7.23.1
+  - dependency-name: react-static-plugin-source-filesystem
+    versions:
+    - 7.4.2
+    - 7.5.0
+    - 7.5.1
+  - dependency-name: react-static
+    versions:
+    - 7.4.2
+    - 7.5.0
+    - 7.5.1
+  - dependency-name: react-static-plugin-reach-router
+    versions:
+    - 7.4.2
+    - 7.5.0
+    - 7.5.1
+  - dependency-name: react-static-plugin-sitemap
+    versions:
+    - 7.4.2
+    - 7.5.0
+    - 7.5.1
+  - dependency-name: match-sorter
+    versions:
+    - 6.1.0
+    - 6.2.0
+  - dependency-name: downshift
+    versions:
+    - 6.0.14
+  - dependency-name: yup
+    versions:
+    - 0.32.8
+  - dependency-name: "@emotion/babel-preset-css-prop"
+    versions:
+    - 11.0.0
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
